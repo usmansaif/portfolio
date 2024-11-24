@@ -5,6 +5,42 @@
 body {
     padding-top: $navbar-base-height;
     color: $gray-600;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #ffffff;
+    }
+
+    .text-primary {
+        color: yellow !important;
+    }
+
+    .project-card {
+        background-color: transparent;
+        border: 1px solid #ffffff;
+        h3 {
+            color: #ffffff;
+        }
+        p {
+            color: #ffffff;
+        }
+    }
+
+    .technologies {
+        li {
+            background-color: transparent;
+            color: yellow;
+            border: 1px solid yellow !important;
+        }
+    }
+}
+body.light-mode {
+    background-color: #ffffff;
+    color: $gray-600;
 }
 
 @include media-breakpoint-up(lg) {
@@ -14,17 +50,16 @@ body {
     }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 h1 {
     line-height: 1;
+}
+h2 {
+    color: $primary;
 }
 
 p.lead {

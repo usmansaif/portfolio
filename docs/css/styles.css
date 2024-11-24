@@ -122,29 +122,29 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.375rem + 1.5vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.405rem + 1.86vw);
+  font-size: calc(1.325rem + 0.9vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.285rem + 0.42vw);
+  font-size: calc(1.295rem + 0.54vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 }
 
@@ -7913,15 +7913,15 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.475rem + 2.7vw) !important;
+  font-size: calc(1.375rem + 1.5vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.405rem + 1.86vw) !important;
+  font-size: calc(1.325rem + 0.9vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.285rem + 0.42vw) !important;
+  font-size: calc(1.295rem + 0.54vw) !important;
 }
 
 .fs-4 {
@@ -10782,13 +10782,13 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 3.5rem !important;
+    font-size: 2.5rem !important;
   }
   .fs-2 {
-    font-size: 2.8rem !important;
+    font-size: 2rem !important;
   }
   .fs-3 {
-    font-size: 1.6rem !important;
+    font-size: 1.7rem !important;
   }
   .fs-4 {
     font-size: 1.5rem !important;
@@ -10829,6 +10829,38 @@ textarea.form-control-lg {
 body {
   padding-top: 3.375rem;
   color: #6c757d;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark-mode h1, body.dark-mode .h1, body.dark-mode h2, body.dark-mode .h2, body.dark-mode h3, body.dark-mode .h3, body.dark-mode h4, body.dark-mode .h4, body.dark-mode h5, body.dark-mode .h5, body.dark-mode h6, body.dark-mode .h6 {
+  color: #ffffff;
+}
+body.dark-mode .text-primary {
+  color: yellow !important;
+}
+body.dark-mode .project-card {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+body.dark-mode .project-card h3, body.dark-mode .project-card .h3 {
+  color: #ffffff;
+}
+body.dark-mode .project-card p {
+  color: #ffffff;
+}
+body.dark-mode .technologies li {
+  background-color: transparent;
+  color: yellow;
+  border: 1px solid yellow !important;
+}
+
+body.light-mode {
+  background-color: #ffffff;
+  color: #6c757d;
 }
 
 @media (min-width: 992px) {
@@ -10837,22 +10869,17 @@ body {
     padding-left: 17rem;
   }
 }
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 h1, .h1 {
   line-height: 1;
+}
+
+h2, .h2 {
+  color: #007ced;
 }
 
 p.lead {
@@ -11014,4 +11041,10 @@ section.projects h2, section.projects .h2 {
   font-size: 0.7rem;
   color: #495057;
   border: 1px solid #007ced !important;
+}
+
+.btn-dark-mode {
+  position: fixed;
+  right: 5px;
+  top: 60px;
 }

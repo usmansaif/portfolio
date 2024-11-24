@@ -27,3 +27,46 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// Function to load the mode from localStorage and apply it
+function loadMode() {
+    const savedMode = localStorage.getItem('mode');
+    if (savedMode) {
+        if (savedMode === 'light-mode') {
+            document.body.classList.add('light-mode');
+            document.body.classList.remove('dark-mode');
+        } else if (savedMode === 'dark-mode') {
+            document.body.classList.add('dark-mode');
+            document.body.classList.remove('light-mode');
+        }
+    } else {
+        // Default to light mode if no preference is saved
+        document.body.classList.add('light-mode');
+    }
+}
+
+// Function to toggle between light and dark mode
+function toggleMode() {
+    if (document.body.classList.contains('light-mode')) {
+        document.body.classList.remove('light-mode');
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('mode', 'dark-mode'); // Save dark mode preference
+    } else {
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+        localStorage.setItem('mode', 'light-mode'); // Save light mode preference
+    }
+}
+
+// Load the mode on page load
+loadMode();
+
+// Add event listener to the toggle button
+document.getElementById('mode-toggle').addEventListener('click', toggleMode);
+
+// Enable Bootstrap tooltip
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+    new bootstrap.Tooltip(tooltipTriggerEl);
+});
