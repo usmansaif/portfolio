@@ -10857,6 +10857,10 @@ body.dark-mode .technologies li {
   color: yellow;
   border: 1px solid yellow !important;
 }
+body.dark-mode .accordion-body {
+  background: #121212;
+  color: #fff;
+}
 
 body.light-mode {
   background-color: #ffffff;
@@ -11047,4 +11051,48 @@ section.projects h2, section.projects .h2 {
   position: fixed;
   right: 5px;
   top: 60px;
+}
+
+.project-origin {
+  text-align: right;
+  font-style: italic;
+  color: #007ced;
+}
+
+.project-origin:before {
+  content: "~";
+}
+
+.accordion-body {
+  border-bottom: 1px solid #dddddd;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.thumbnail-gallery .thumbnail {
+  width: 120px;
+  height: 75px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.thumbnail-gallery .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.thumbnail-gallery .thumbnail:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
