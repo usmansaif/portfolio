@@ -53,3 +53,48 @@ section.projects {
   right: 5px;
   top: 60px;
 }
+
+.project-origin {
+  text-align: right;
+  font-style: italic;
+  color: $primary;
+}
+.project-origin:before {
+  content: '~'
+}
+
+.accordion-body {
+  border-bottom: 1px solid #dddddd;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.thumbnail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .thumbnail {
+    width: 120px;
+    height: 75px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

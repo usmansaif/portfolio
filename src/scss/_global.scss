@@ -37,7 +37,13 @@ body.dark-mode {
             border: 1px solid yellow !important;
         }
     }
+
+    .accordion-body {
+        background: #121212;
+        color: #fff;
+    }
 }
+
 body.light-mode {
     background-color: #ffffff;
     color: $gray-600;

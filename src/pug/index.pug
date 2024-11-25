@@ -189,31 +189,42 @@ html(lang='en')
             section#projects.resume-section
                 .resume-section-content
                     h2.mb-5 Projects
-                    .container
-                        .row
-                            // Example Project 1
-                            .col-md-6
-                                .project-card
-                                    h3 BFMR
-                                    p Description of Project 1
+
+                    .accordion.accordion-flush(id="projectlist")
+                        // Accordion Item 1
+                        .accordion-item
+                            h2.accordion-header(id="project-head-1")
+                                button.accordion-button(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-1" aria-expanded="true" aria-controls="project-body-1")
+                                    | BuyForMeRetail
+                            #project-body-1.accordion-collapse.collapse.show(aria-labelledby="headingOne" data-bs-parent="#project-head-1")
+                                .accordion-body
+                                    a.btn.btn-link.btn-sm.float-end.mb-5(href='https://bfmr.com' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
+                                        | bfmr.com
+                                        i.fas.fa-external-link
+
+                                    p.m-0.p-0 BuyForMeRetail is a crowdsourcing platform that procures items from e-commerce retailers.
+                                    h6.mt-3 Role & Responsibilities/ Task Completed
+                                    p.text-justify Maintained and developed features in that project. Done many optimizations in back-end applications for better performance. I also helped associates/team members. As a dedicated software developer, I oversaw our project's ongoing enhancement and stability. In addition to my responsibilities with the project itself, I actively supported and guided fellow associates in their development efforts. Whether it's troubleshooting technical issues, offering insights on best practices, or providing mentorship on coding techniques, I strived to empower my colleagues to excel in their roles.
+                                    p.text-justify Through effective project maintenance and collaborative development efforts, I contributed to the success and growth of our team, fostering a culture of innovation and continuous improvement.
+                                    p.project-origin
+                                        strong Origin
+                                        | Texas, USA
+
+                                    .thumbnail-gallery
+                                        .thumbnail
+                                            a(href=`/assets/img/portfolio/bfmr-1.jpg` target="_blank" class="lightbox")
+                                                img(src=`/assets/img/portfolio/thumb/bfmr-1.jpg` alt='BFMR' title='BFMR')
+
                                     ul.technologies
-                                        li VueJS
+                                        li PHP
                                         li Laravel
-                                        li AWS
-                                        li GitHub + CI/CD
-                                        li PhpStorm
-                                        li DBviewer
-                            // Example Project 2
-                            .col-md-6
-                                .project-card
-                                    h3 HelpDesk (Company internal)
-                                    p Description of Project 2
-                                    ul.technologies
-                                        li Vue.js
-                                        li Laravel
-                                        li MySQL
-                    div
-                        | NOTE :add more projects from nextbridge operations resume
+                                        li MYSQL
+                                        li Apache
+                                        li Linux
+                                        li PHP Storm
+                                        li GitHub
+                                        li JIRA
+                                        li Dbeaver
 
             hr.m-0
 
@@ -254,6 +265,7 @@ html(lang='en')
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js')
 
         // Core theme JS
         script(src='js/scripts.js')
