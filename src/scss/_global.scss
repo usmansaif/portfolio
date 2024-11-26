@@ -11,6 +11,14 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 
+    .dark-mode-bg {
+        background: #ffffff;
+    }
+
+    .contact-card {
+        color: #ffffff;
+    }
+
     h1,h2,h3,h4,h5,h6 {
         color: #ffffff;
     }
@@ -59,6 +67,7 @@ body.light-mode {
 h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
     transition: color 0.3s ease;
+    position: relative;
 }
 
 h1 {

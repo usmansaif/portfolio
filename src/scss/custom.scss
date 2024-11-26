@@ -71,6 +71,25 @@ section.projects {
   text-decoration: none;
 }
 
+.contact-card {
+  border: 1px solid #c4c4c4;
+  padding: 35px;
+  border-radius: 8px;
+  color: $black;
+}
+
+.section-heading {
+  text-align: center;
+}
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 8%; /* The width of the border as a percentage of the heading's text width */
+  margin: 0 auto; /* Centers the border */
+  border-bottom: 5px solid $primary; /* Border size and color */
+  margin-top: 5px; /* Adjusts space between text and border */
+}
+
 .thumbnail-gallery {
   display: flex;
   flex-wrap: wrap;
