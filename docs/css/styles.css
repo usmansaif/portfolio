@@ -11096,9 +11096,10 @@ section.projects h2, section.projects .h2 {
 
 .contact-card {
   border: 1px solid #c4c4c4;
-  padding: 35px;
+  padding: 25px;
   border-radius: 8px;
   color: #495057;
+  margin-bottom: 10px;
 }
 
 .section-heading {

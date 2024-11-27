@@ -1,0 +1,18 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Usman Saif
+N:Saif;Usman;;;
+NICKNAME:Usman
+item1.EMAIL;TYPE=INTERNET:usman.saif22@gmail.com
+item1.X-ABLabel:Personal
+TEL;TYPE=HOME:+923311440036
+ADR;TYPE=WORK:;Kot Lakhpat;F879+9FM\, Maulana Shaukat Ali Rd;Lahore;;54600;
+ PK;F879+9FM\, Maulana Shaukat Ali Rd\nKot Lakhpat\, Lahore\n54600\nPK
+ORG:Usman Saif;Software Development
+TITLE:Senior Software Engineer
+item2.URL:https\://usmansaif.work
+item2.X-ABLabel:Portfolio
+NOTE:Experienced software developer with expertise in PHP\, Laravel\, Vue.j
+ s\, and MySQL.
+CATEGORIES:myContacts
+END:VCARD

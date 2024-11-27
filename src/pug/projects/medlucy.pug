@@ -1,6 +1,7 @@
 .accordion-item
     h2.accordion-header(id="medlucy")
         button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-medlucy" aria-controls="project-medlucy")
+            span.badge.bg-dark.me-2 WEB
             | MedLucy Healthcare Software
     #project-medlucy.accordion-collapse.collapse(data-bs-parent="#projectlist")
         .accordion-body
@@ -66,13 +67,18 @@
             .thumbnail-gallery
                 .thumbnail
                     a(href=`/assets/img/portfolio/medlucy-1.jpg` target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/medlucy-1.jpg` alt='Medlucy homepage' title='Medlucy homepage')
+                        img(src=`/assets/img/portfolio/thumb/medlucy-1.jpg` alt='Medlucy admin login' title='Medlucy admin login')
+                .thumbnail
+                    a(href=`/assets/img/portfolio/medlucy-2.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/medlucy-2.jpg` alt='Medlucy clinics listing' title='Medlucy clinics listing')
+                .thumbnail
+                    a(href=`/assets/img/portfolio/medlucy-3.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/medlucy-3.jpg` alt='Medlucy add new clinic' title='Medlucy add new clinic')
+                .thumbnail
+                    a(href=`/assets/img/portfolio/medlucy-4.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/medlucy-4.jpg` alt='Medlucy dashboard' title='Medlucy dashboard')
 
+            - const technologies = ["Laravel", "PHP", "Vue JS", "Vuex", "Vuetify", "MYSQL", "Github"]
             ul.technologies
-                li Laravel
-                li PHP
-                li Vue JS
-                li Vuex
-                li Vuetify
-                li MYSQL
-                li Github
+                each tech in technologies
+                    li= tech
