@@ -1,0 +1,28 @@
+.accordion-item
+    h2.accordion-header(id="alshifa")
+        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-alshifa" aria-controls="project-alshifa")
+            span.badge.bg-dark.me-2 WEB
+            | Al-Shifa ‒ Herbs eStore
+    #project-alshifa.accordion-collapse.collapse(data-bs-parent="#projectlist")
+        .accordion-body
+            a.btn.btn-link.btn-sm.float-end.mb-5(href='https://alshifa.com.pk' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
+                | alshifa.com.pk
+                i.fas.fa-external-link
+
+            p.m-0.p-0 ...
+
+            p.project-origin
+                strong Origin
+                | Lahore, Pakistan
+
+            .thumbnail-gallery
+                .thumbnail
+                    a(href=`/assets/img/portfolio/alshifa-1.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/alshifa-1.jpg` alt='alshifa Official Website Home Page' title='alshifa Official Website Home Page')
+
+            ul.technologies
+                li PHP
+                li MYSQL
+                li Wordpress
+                li Elementor
+                li VScode
