@@ -35,6 +35,10 @@ section.projects {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
 
   li {
     display: inline-block;
@@ -44,7 +48,20 @@ section.projects {
     border-radius: 5px;
     font-size: 0.7rem;
     color: #495057;
-    border: 1px solid #007ced !important;
+    border: 1px solid $primary !important;
+  }
+
+  // Mobile styles
+  @media (max-width: 768px) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 5px;
+
+    li {
+      flex: 0 0 auto; // Ensures items do not shrink
+      margin-bottom: 0; // Avoid gaps due to bottom margin
+    }
   }
 }
 
@@ -94,6 +111,7 @@ section.projects {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 10px;
 
   .thumbnail {
     width: 120px;
@@ -114,6 +132,21 @@ section.projects {
     &:hover {
       transform: scale(1.05);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // Mobile styles
+  @media (max-width: 768px) {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+
+    .thumbnail {
+      width: 80px;
+      height: 55px;
+      flex: 0 0 auto; // Ensures items do not shrink
+      margin-bottom: 0; // Avoid gaps due to bottom margin
     }
   }
 }

@@ -11042,6 +11042,10 @@ section.projects h2, section.projects .h2 {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 .technologies li {
   display: inline-block;
@@ -11052,6 +11056,18 @@ section.projects h2, section.projects .h2 {
   font-size: 0.7rem;
   color: #495057;
   border: 1px solid #007ced !important;
+}
+@media (max-width: 768px) {
+  .technologies {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 5px;
+  }
+  .technologies li {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+  }
 }
 
 .btn-dark-mode {
@@ -11102,6 +11118,7 @@ section.projects h2, section.projects .h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 10px;
 }
 .thumbnail-gallery .thumbnail {
   width: 120px;
@@ -11122,4 +11139,18 @@ section.projects h2, section.projects .h2 {
 .thumbnail-gallery .thumbnail:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .thumbnail-gallery {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 10px;
+  }
+  .thumbnail-gallery .thumbnail {
+    width: 80px;
+    height: 55px;
+    flex: 0 0 auto;
+    margin-bottom: 0;
+  }
 }

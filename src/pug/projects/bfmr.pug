@@ -1,8 +1,8 @@
 .accordion-item
     h2.accordion-header(id="project-head-1")
-        button.accordion-button(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-1" aria-expanded="true" aria-controls="project-body-1")
+        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-1" aria-controls="project-body-1")
             | &#x42;&#x75;&#x79;&#x46;&#x6f;&#x72;&#x4d;&#x65;&#x52;&#x65;&#x74;&#x61;&#x69;&#x6c;
-    #project-body-1.accordion-collapse.collapse(aria-labelledby="headingOne" data-bs-parent="#project-head-1")
+    #project-body-1.accordion-collapse.collapse(aria-labelledby="headingOne" data-bs-parent="#projectlist")
         .accordion-body
             a.btn.btn-link.btn-sm.float-end.mb-5(href='https://bfmr.com' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
                 | &#x62;&#x66;&#x6d;&#x72;&#x2e;&#x63;&#x6f;&#x6d;
