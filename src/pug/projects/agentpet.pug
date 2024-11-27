@@ -1,0 +1,45 @@
+.accordion-item
+    h2.accordion-header(id="agent")
+        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-agentpet" aria-controls="project-agentpet")
+            | AgentPet.com
+    #project-agentpet.accordion-collapse.collapse(data-bs-parent="#projectlist")
+        .accordion-body
+            a.btn.btn-link.btn-sm.float-end.mb-5(href='https://agentpet.com' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
+                | agentpet.com
+                i.fas.fa-external-link
+
+            p.m-0.p-0 Online platform to buy and sell pets along with eCommerce capabilities to sell pet accessories and food. An easy tool to find nearby pet stores. Pet Owners also have the option to avail of some pet relocation services.
+            strong Features
+            ul
+                li Pet Accessories
+                li Pet Food Store
+                li Pet sale and purchase ads
+                li Pet relocation
+                li Find Nearby Pet Shops
+                li Forum
+
+            p.project-origin
+                strong Origin
+                | Lahore, Pakistan
+
+            .thumbnail-gallery
+                .thumbnail
+                    a(href=`/assets/img/portfolio/agentpet-1.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/agentpet-1.jpg` alt='AgentpPet homepage' title='AgentpPet homepage')
+                .thumbnail
+                    a(href=`/assets/img/portfolio/agentpet-2.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/agentpet-2.jpg` alt='AgentpPet pet listing' title='AgentpPet pet listing')
+                .thumbnail
+                    a(href=`/assets/img/portfolio/agentpet-3.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/agentpet-3.jpg` alt='AgentpPet category homepage' title='AgentpPet category homepage')
+                .thumbnail
+                    a(href=`/assets/img/portfolio/agentpet-4.jpg` target="_blank" class="lightbox")
+                        img(src=`/assets/img/portfolio/thumb/agentpet-4.jpg` alt='AgentpPet pet and store listing' title='AgentpPet pet and store listing')
+
+            ul.technologies
+                li Laravel
+                li PHP
+                li MYSQL
+                li JQuery
+                li Bootstrap
+                li Github
