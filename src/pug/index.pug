@@ -65,9 +65,9 @@ html(lang='en')
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#projects') Projects
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#') Services
+                        a.nav-link.js-scroll-trigger(href='#services') Services
                     li.nav-item
-                        a.nav-link.js-scroll-trigger(href='#') Testimonials
+                        a.nav-link.js-scroll-trigger(href='#testimonials') Testimonials
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#contact') Contact
 
@@ -101,17 +101,19 @@ html(lang='en')
                 include components/skills
 
             hr.m-0
-            // Interests
+            // projects
             section#projects.resume-section
-                .resume-section-content
-                    h2.section-heading.mb-5 Projects
-                    include components/projects
+                include components/projects
 
-            hr.m-0
+            // services
+            section#services.resume-section
+                include components/services
 
-            // Contact
-            section#contact.resume-section
-                include components/contact
+        hr.m-0
+
+        // Contact
+        section#contact.resume-section
+            include components/contact
 
 
         // Footer - Copyright Section

@@ -19,6 +19,20 @@ body.dark-mode {
         color: #ffffff;
     }
 
+    .service-card {
+        border: 1px solid yellow;
+        background: transparent;
+        color: #ffffff;
+
+        .service-title {
+            color: #ffffff;
+        }
+
+        .service-description {
+            color: #ffffff;
+        }
+    }
+
     h1,h2,h3,h4,h5,h6 {
         color: #ffffff;
     }

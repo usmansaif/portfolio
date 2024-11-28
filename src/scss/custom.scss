@@ -9,6 +9,10 @@ section.projects {
   }
 }
 
+.no-select {
+  user-select: none;
+}
+
 /* Project card styles */
 .project-card {
   background-color: #ffffff;
@@ -148,6 +152,103 @@ section.projects {
       height: 55px;
       flex: 0 0 auto; // Ensures items do not shrink
       margin-bottom: 0; // Avoid gaps due to bottom margin
+    }
+  }
+}
+.services-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  display: flex; /* Enables flexbox */
+  flex-direction: column; /* Stacks title and description vertically */
+  align-items: center; /* Center-aligns content */
+  justify-content: center; /* Aligns content in the center */
+  width: 100%; /* Ensures consistent size */
+  aspect-ratio: 1 / 1; /* Ensures square shape */
+  background-color: #ffffff;
+  border: 1px solid $primary;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  color: $black;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: default;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    color: $primary;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px; /* Adds spacing between title and description */
+    user-select: none;
+  }
+
+  .service-description {
+    font-size: 1rem;
+    font-weight: normal;
+    color: $black; /* Subtle color for description */
+    line-height: 1.4;
+    user-select: none;
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .services-grid {
+    gap: 15px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .service-card {
+    font-size: 1rem;
+    padding: 15px;
+    aspect-ratio: 1 / 1; /* Makes the height equal to the width, keeping the cards square */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+
+    .service-title {
+      font-size: 1rem;
+    }
+
+    .service-description {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .services-grid {
+    gap: 15px;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .service-card {
+    font-size: 0.9rem;
+    padding: 10px;
+    aspect-ratio: 1 / 1; /* Makes the height equal to the width, keeping the cards square */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+
+    .service-title {
+      font-size: 0.9rem;
+    }
+
+    .service-description {
+      font-size: 0.8rem;
     }
   }
 }
