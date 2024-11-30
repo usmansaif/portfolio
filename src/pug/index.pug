@@ -78,8 +78,8 @@ html(lang='en')
 
             // Dark/Light Mode Toggle Button
             button.btn.btn-link.btn-dark-mode.btn-lg(id="mode-toggle" data-bs-toggle="tooltip" title="Toggle Dark/Light Mode")
-                i.fas.fa-sun.text-white.d-none(id="light-icon")
-                i.fas.fa-moon.text-primary(id="dark-icon")
+                i.fas.fa-sun.text-primary(id="light-icon")
+                i.fas.fa-moon.text-white.d-none(id="dark-icon")
 
             // About
             section#about.resume-section
@@ -87,29 +87,33 @@ html(lang='en')
 
             hr.m-0
 
-            // Experience
+            // Skills
             section#skills.resume-section
                 include components/skills
 
             hr.m-0
 
-            // Education
+            // Experience
             section#experience.resume-section
                 include components/experience
             hr.m-0
 
-            // Skills
+            // Education
             section#education.resume-section
                 include components/education
 
             hr.m-0
-            // projects
+            // Projects
             section#projects.resume-section
                 include components/projects
 
-            // services
+            hr.m-0
+
+            // Services
             section#services.resume-section
                 include components/services
+
+            hr.mt-0
 
             // testimonials
             section#testimonials.resume-section
@@ -121,6 +125,7 @@ html(lang='en')
             section#contact.resume-section
                 include components/contact
 
+            hr.m-0
 
         // Footer - Copyright Section
         footer.bg-dark.text-white.text-center.py-3
