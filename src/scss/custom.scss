@@ -269,6 +269,11 @@ section.projects {
   cursor: default;
 }
 
+.testimonial-card-body {
+  background-color: $white;
+  color: $black;
+}
+
 .carousel-item img {
   border: 3px solid #007bff; // Blue border around the avatar
   padding: 5px;
@@ -282,6 +287,10 @@ section.projects {
 .carousel-item p {
   font-style: italic;
   width: 70%;
+}
+
+.carousel-indicators {
+  bottom: -60px;
 }
 
 .carousel-control-prev-icon {

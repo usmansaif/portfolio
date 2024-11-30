@@ -11,6 +11,15 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 
+    .testimonial-card-body {
+        background-color: #121212;
+        color: $white;
+    }
+
+    .testimonial-card-body * {
+        color: $white;
+    }
+
     .dark-mode-bg {
         background: #ffffff;
     }
@@ -24,8 +33,10 @@ body.dark-mode {
         background: transparent;
         color: #ffffff;
 
-        .service-title {
-            color: #ffffff;
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            color: yellow;
         }
 
         .service-description {
