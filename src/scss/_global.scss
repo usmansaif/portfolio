@@ -20,6 +20,16 @@ body.dark-mode {
         color: $white;
     }
 
+    .accordion-button {
+        background-color: #121212;
+        color: $white;
+    }
+
+    .bg-primary {
+        --bs-bg-opacity: 1;
+        background-color: #212529 !important;
+    }
+
     .dark-mode-bg {
         background: #ffffff;
     }
