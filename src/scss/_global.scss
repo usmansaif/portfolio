@@ -20,6 +20,10 @@ body.dark-mode {
         color: $white;
     }
 
+    .accordion-body {
+        background: transparent;
+    }
+
     .accordion-button {
         background-color: #121212;
         color: $white;
@@ -28,6 +32,10 @@ body.dark-mode {
     .bg-primary {
         --bs-bg-opacity: 1;
         background-color: #212529 !important;
+    }
+
+    .progress-bar {
+        background-color: #646464 !important;
     }
 
     .dark-mode-bg {

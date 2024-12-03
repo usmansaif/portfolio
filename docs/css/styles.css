@@ -10843,6 +10843,9 @@ body.dark-mode .testimonial-card-body {
 body.dark-mode .testimonial-card-body * {
   color: #fff;
 }
+body.dark-mode .accordion-body {
+  background: transparent;
+}
 body.dark-mode .accordion-button {
   background-color: #121212;
   color: #fff;
@@ -10850,6 +10853,9 @@ body.dark-mode .accordion-button {
 body.dark-mode .bg-primary {
   --bs-bg-opacity: 1;
   background-color: #212529 !important;
+}
+body.dark-mode .progress-bar {
+  background-color: #646464 !important;
 }
 body.dark-mode .dark-mode-bg {
   background: #ffffff;
@@ -11123,6 +11129,7 @@ section.projects h2, section.projects .h2 {
 
 .accordion-body {
   border-bottom: 1px solid #dddddd;
+  background: #f1f1f1;
 }
 
 .btn-link {
