@@ -24,6 +24,15 @@ body.dark-mode {
         background: transparent;
     }
 
+    .project-origin {
+        color: #ffffff;
+    }
+
+    .text-content-block {
+        background-color: transparent;
+        border: 1px solid $gray-600;
+    }
+
     .accordion-button {
         background-color: #121212;
         color: $white;

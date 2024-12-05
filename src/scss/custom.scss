@@ -77,12 +77,18 @@ section.projects {
 }
 
 .project-origin {
-  text-align: right;
+  text-align: left;
   font-style: italic;
   color: $primary;
 }
-.project-origin:before {
-  content: '~'
+
+.text-content-block {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
 .accordion-body {

@@ -3,11 +3,8 @@ html(lang='en')
 
     head
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        // Character Set and Viewport
         meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name="description" content="Explore the professional portfolio of Usman Saif, a Senior Software Engineer specializing in PHP, Laravel, Vue.js, MySQL, and Linux. Discover projects, skills, and contact details.")
         meta(name="keywords" content="Usman Saif, Senior Software Engineer, PHP Developer, Laravel Expert, Vue.js Developer, MySQL, Linux, Full Stack Developer, Portfolio, Software Development, Pakistan")
         meta(name="author" content="Usman Saif")
@@ -43,6 +40,104 @@ html(lang='en')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
+
+        script(type="application/ld+json").
+            {
+                "@context": "https://schema.org/",
+                "@type": "ProfessionalService",
+                "description": "Services offered by Usman Saif | Senior Software Engineer",
+                "hasMenuItem": [
+                    {
+                        "@type": "MenuSection",
+                        "name": "Development Services",
+                        "hasMenuItem": [
+                            {
+                                "@type": "MenuItem",
+                                "name": "Custom Web Application Development",
+                                "description": "Build scalable, secure, and dynamic web applications tailored to your business needs using Laravel and Vue.js."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "Backend Development",
+                                "description": "Design and implement robust backend systems with efficient APIs, database management, and performance optimization."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "API Development",
+                                "description": "Develop secure and well-documented APIs for seamless integration with frontend and third-party applications."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "Database Design & Optimization",
+                                "description": "Create efficient MySQL database schemas, optimize queries, and ensure high-performance data management."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "Linux Server Administration",
+                                "description": "Manage Linux-based servers for hosting, deployment, performance tuning, and security hardening."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "Scripting / Automation",
+                                "description": "Automate tasks, streamline workflows, and develop custom commands in Ubuntu/Debian using powerful Bash scripts. Create tailored Bash, PHP, and Java scripts to parse or process data, images, and more efficiently."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "WordPress Website Development",
+                                "description": "Create custom WordPress websites, including theme, plugin integration, and SEO-friendly designs."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "Agile Methodology & Scrum",
+                                "description": "Experienced in working in Agile environments, following Scrum practices for iterative development, regular stand-ups, sprints, and backlog grooming."
+                            },
+                            {
+                                "@type": "MenuItem",
+                                "name": "Payment Gateway Integration",
+                                "description": "Expertise in integrating popular payment gateways like Stripe, PayPal, or Authorize.Net into web applications, enabling secure and seamless online payments for users."
+                            }
+                        ]
+                    }
+                ],
+                "name": "Usman Saif",
+                "address": {
+                    "@type": "PostalAddress",
+                    "postalCode": "54000",
+                    "streetAddress": "Peco Road",
+                    "addressCountry": "PK",
+                    "addressLocality": "Lahore"
+                },
+                "image": "https://usmansaif.work/assets/img/profile.jpg",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "31.463405",
+                    "longitude": "74.318655"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "opens": "00:00",
+                    "closes": "23:59",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                        "Sunday"
+                    ]
+                },
+                "telephone": "+923311440036",
+                "url": "https://usmansaif.work",
+                "priceRange": "$15 - $30",
+                "menu": "https://usmansaif.work#services",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.8",
+                    "ratingCount": "10",
+                    "reviewCount": "10"
+                }
+            }
 
     body#page-top(class="light-mode")
 

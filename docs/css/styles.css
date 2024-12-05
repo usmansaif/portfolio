@@ -10846,6 +10846,13 @@ body.dark-mode .testimonial-card-body * {
 body.dark-mode .accordion-body {
   background: transparent;
 }
+body.dark-mode .project-origin {
+  color: #ffffff;
+}
+body.dark-mode .text-content-block {
+  background-color: transparent;
+  border: 1px solid #6c757d;
+}
 body.dark-mode .accordion-button {
   background-color: #121212;
   color: #fff;
@@ -11118,13 +11125,18 @@ section.projects h2, section.projects .h2 {
 }
 
 .project-origin {
-  text-align: right;
+  text-align: left;
   font-style: italic;
   color: #007ced;
 }
 
-.project-origin:before {
-  content: "~";
+.text-content-block {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+  text-align: justify;
 }
 
 .accordion-body {
