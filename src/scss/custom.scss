@@ -9,6 +9,40 @@ section.projects {
   }
 }
 
+.ai-text {
+  background: linear-gradient(90deg, #8e2de2, #4a00e0, #00eaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.ai-underline {
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #8e2de2, #4a00e0, #00eaff) 1;
+  padding-bottom: 2px;
+}
+
+.ai-border {
+  /* tweak these vars as needed */
+  --ai-gradient: linear-gradient(90deg, #8e2de2, #4a00e0, #00eaff);
+  --border-size: 3px;
+  --radius: 12px;
+  --inner-bg: #ffffff; /* inner/background color of the box */
+
+  /* layout */
+  display: inline-block; /* or block as needed */
+  padding: 1rem;         /* inner spacing - adjust per layout */
+  border-radius: var(--radius);
+  border: var(--border-size) solid transparent;
+
+  /* magic: two backgrounds - inner (padding-box) and gradient (border-box) */
+  background:
+          var(--inner-bg) padding-box,
+          var(--ai-gradient) border-box;
+  box-sizing: border-box;
+}
+
 .no-select {
   user-select: none;
 }
@@ -115,7 +149,7 @@ section.projects {
 .section-heading::after {
   content: "";
   display: block;
-  width: 8%; /* The width of the border as a percentage of the heading's text width */
+  width: 12%; /* The width of the border as a percentage of the heading's text width */
   margin: 0 auto; /* Centers the border */
   border-bottom: 5px solid $primary; /* Border size and color */
   margin-top: 5px; /* Adjusts space between text and border */
@@ -181,7 +215,7 @@ section.projects {
   width: 100%; /* Ensures consistent size */
   aspect-ratio: 1 / 1; /* Ensures square shape */
   background-color: #ffffff;
-  border: 1px solid $primary;
+  border: 0px solid $primary;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;

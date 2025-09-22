@@ -2,39 +2,46 @@
     h2.section-heading.mb-5 Contact
     .row
         // First Column - Contact Details
-        .col-md-6
-            h1.m-0.p-0.text-capitalize(style='font-size: 4em;') Lets Chat.
-            h3.m-0.p-0.text-capitalize Discuss about your project
-            h3.m-0.p-0.text-capitalize.text-info Let's create something together
-                i.fas.fa-star.text-warning
+        .col-md-12
+            h1.m-0.p-0.text-capitalize Lets Chat.
+            h2.m-0.p-0.text-capitalize Discuss about your project
+            h3.m-0.p-0.text-capitalize.text-primary Let's create something together
 
         // Second Column - Contact Form or Google Map
-        .col-md-6
+        .col-md-6.mt-4
             div.contact-card
                 div.mt-2
                     strong Mail Me at
                     br
-                    img.dark-mode-bg(src=`/assets/img/personal-email-address.png` alt='BFMR' title='BFMR')
+                    img.dark-mode-bg(src=`/assets/img/personal-email-address.png` alt='Email' title='Email')
                 div.mt-2
                     strong Call Me at
                     br
-                    img.dark-mode-bg(src=`/assets/img/personal-mobile-no.png` alt='BFMR' title='BFMR')
+                    img.dark-mode-bg(src=`/assets/img/personal-mobile-no.png` alt='Mobile' onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Call Now")
                 div.mt-2.font-weight-bold
                     i.fas.fa-map-marker
-                    | Model Town, Lahore, Pakistan
+                    | Plot 114, G2, Wapda Town, Lahore, Pakistan. 54770
 
         // Second Column - Contact Form or Google Map
-        .col-md-6
-        .col-md-6
+        .col-md-6.mt-4
             div.contact-card
                 div.mt-2
                     //img.float-end(src="/assets/img/contact-qr-code.svg" alt="Scan & Save My Contact" style="max-width: 150px;")
-                    p Download my contact info and save it for future reference!
+                    p Save my contact details for quick access.
                     ol
-                        li Open downloaded file
-                        li Save into your contacts
-                    a.btn.btn-primary(href='/assets/file/usmansaif.vcf')
+                        li Download the vCard file
+                        li Add it to your contacts
+                    a.mt-2.btn.btn-primary(href='/assets/file/usmansaif.vcf')
                         | Save My Contact
-                    button.btn.btn-success(onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Make direct call")
+                    button.mt-2.btn.btn-success(onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Make direct call")
                         i.fas.fa-phone
-                        | Make Call
+                        | Call Now
+                    a.mt-2.btn.btn-success(
+                      href="https://wa.me/923311440036"
+                      target="_blank"
+                      rel="noopener"
+                      data-bs-toggle="tooltip"
+                      title="Chat on WhatsApp"
+                    )
+                      i.fab.fa-whatsapp
+                      |  WhatsApp Me
