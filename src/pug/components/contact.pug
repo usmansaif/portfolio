@@ -7,26 +7,25 @@
             h2.m-0.p-0.text-capitalize Discuss about your project
             h3.m-0.p-0.text-capitalize.text-primary Let's create something together
 
-        // Second Column - Contact Form or Google Map
+        // Contact Details
         .col-md-6.mt-4
-            div.contact-card
-                div.mt-2
+            .contact-card
+                .mt-2
                     strong Mail Me at
                     br
-                    img.dark-mode-bg(src=`/assets/img/personal-email-address.png` alt='Email' title='Email')
-                div.mt-2
+                    img.dark-mode-bg(src="/assets/img/personal-email-address.png" alt="Email" title="Email")
+                .mt-2
                     strong Call Me at
                     br
-                    img.dark-mode-bg(src=`/assets/img/personal-mobile-no.png` alt='Mobile' onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Call Now")
-                div.mt-2.font-weight-bold
+                    img.dark-mode-bg(src="/assets/img/personal-mobile-no.png" alt="Mobile" onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Call Now")
+                .mt-2.font-weight-bold
                     i.fas.fa-map-marker
                     | Plot 114, G2, Wapda Town, Lahore, Pakistan. 54770
 
-        // Second Column - Contact Form or Google Map
+        // Save Contact + LinkedIn
         .col-md-6.mt-4
-            div.contact-card
-                div.mt-2
-                    //img.float-end(src="/assets/img/contact-qr-code.svg" alt="Scan & Save My Contact" style="max-width: 150px;")
+            .contact-card
+                .mt-2
                     p Save my contact details for quick access.
                     ol
                         li Download the vCard file
@@ -43,5 +42,16 @@
                       data-bs-toggle="tooltip"
                       title="Chat on WhatsApp"
                     )
-                      i.fab.fa-whatsapp
-                      |  WhatsApp Me
+                        i.fab.fa-whatsapp
+                        | WhatsApp Me
+        .col-md-6
+            .mt-3
+                // LinkedIn Badge Embed
+                .badge-base.LI-profile-badge(
+                    data-locale="en_US"
+                    data-size="large"
+                    data-theme="light"
+                    data-type="HORIZONTAL"
+                    data-vanity="usmansaif22"
+                    data-version="v1"
+                )
