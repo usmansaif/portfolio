@@ -1,8 +1,8 @@
-# [Usman Saif - Senior Software Engineer](https://usmansaif.work)
+# [Usman Saif - Senior Software Engineer](https://usmansaif.com)
 
-[Resume](https://usmansaif.work) is a resume and CV theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
+[Resume](https://usmansaif.com) is a resume and CV theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features a fixed sidebar with content sections to build a simple, yet elegant resume.
 
-**[View Portfolio](https://usmansaif.work)**
+**[View Portfolio](https://usmansaif.com)**
 
 Welcome to the repository for my personal portfolio website. This website serves as a platform to showcase my professional experience, skills, and projects as a Senior Software Engineer.
 
