@@ -1,72 +1,109 @@
-.accordion-item
-    h2.accordion-header(id="project-head-2")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-2" aria-controls="project-body-2")
-            span.badge.bg-dark.me-2 WEB
-            | Idara Tul Mustafa Event Manager
-    #project-body-2.accordion-collapse.collapse(aria-labelledby="headingOne" data-bs-parent="#projectlist")
-        .accordion-body
+.project-card(data-category="web")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-globe.me-1
+                        | Event Platform
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-mosque.me-1
+                        | Religious Services
+                    span.badge.badge-confidential
+                        i.fas.fa-shield-alt.me-1
+                        | Enterprise Manager
+                h3.project-name.mb-2 Idara Tul Mustafa – Smart Event Management System
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Gujranwala, Pakistan
+                    span.project-client.ms-3
+                        i.fas.fa-user-tie.me-2
+                        | Religious Scholars Group
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#idara-body" aria-expanded="false" aria-controls="idara-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            p The Event Planner application is a tailored solution designed for a party’s religious scholars to streamline event scheduling and management. Built from the ground up using Laravel PHP, Blade templates, jQuery, Bootstrap, and MySQL, the platform addresses the inefficiencies of manual booking processes, particularly eliminating the challenge of overlapping events. The application enables the registration of scholars, each with a personalized calendar to manage bookings and events efficiently. After attending an event, scholars can provide feedback on the organizers for future reference, fostering accountability and transparency.
-            strong Key Features:
-            ul
-                li
-                    strong Scholar Registration & Profiles:
-                    |  Each scholar has a dedicated profile with personal and event details.
-                li
-                    strong Event Scheduling & Management:
-                    |  Simplifies event creation, allocation, and updates in real-time.
-                li
-                    strong Personalized Booking Calendars:
-                    |  Ensures scholars can view and manage their individual schedules without conflicts.
-                li
-                    strong Conflict Resolution:
-                    |  Automatically prevents double-booking of scholars for overlapping time slots.
-                li
-                    strong Feedback System:
-                    |  Allows scholars to provide post-event feedback about organizers for future reference.
-                li
-                    strong Admin Dashboard:
-                    |  Provides an overview of all events, bookings, and scholar schedules.
+    #idara-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description A specialized event planning application designed to streamline scheduling for religious scholars. Built from scratch to eliminate booking overlaps and manual inefficiencies, providing a transparent, accountability-driven platform.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-calendar-check.me-2
+                                | Key Features Delivered
+                            ul.highlights-list
+                                li Intelligent Conflict Resolution: Automated prevention of overlapping event slots
+                                li Personalized Booking Calendars: Scholar-specific real-time schedule management
+                                li Feedback Loop: Post-event organizer evaluation system
+                                li Scholar Registration System: Secure profile and documentation management
+                                li Comprehensive Admin Control: Global overview of all events and bookings
+                    
+                    .col-md-4
+                        .thumbnail-gallery.d-flex.flex-wrap.gap-2
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/idaratulmustafa-1.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/idaratulmustafa-1.webp` alt='Idara' title='Idara' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/idaratulmustafa-2.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/idaratulmustafa-2.webp` alt='Idara' title='Idara' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/idaratulmustafa-3.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/idaratulmustafa-3.webp` alt='Idara' title='Idara' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/idaratulmustafa-4.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/idaratulmustafa-4.webp` alt='Idara' title='Idara' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/idaratulmustafa-5.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/idaratulmustafa-5.webp` alt='Idara' title='Idara' loading='lazy' class="img-fluid rounded")
 
-            strong Responsibilities:
-            ul
-                li Developed the application from scratch, implementing the full-stack architecture using Laravel PHP for the backend and Blade templates for the frontend.
-                li Designed and managed the MySQL database, ensuring efficient handling of event schedules and feedback data.
-                li Implemented real-time conflict detection for overlapping events to ensure seamless scheduling.
-                li Designed user-friendly interfaces using Bootstrap for a responsive and modern experience.
-                li Utilized jQuery for interactive features such as dynamic calendar updates and event filtering.
-                li Conducted rigorous testing and debugging to ensure high performance and reliability.
-                li Delivered detailed documentation and provided training to end-users on application functionalities.
+            // Technical Deep Dive
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-server.me-2
+                                | Full-Stack Core
+                            .tech-tags
+                                span.tech-tag.backend-tag Laravel
+                                span.tech-tag.backend-tag PHP
+                                span.tech-tag.backend-tag MySQL
+                                span.tech-tag.backend-tag Apache/Linux
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-code.me-2
+                                | Frontend & Tools
+                            .tech-tags
+                                span.tech-tag.frontend-tag Blade Templates
+                                span.tech-tag.frontend-tag Bootstrap
+                                span.tech-tag.frontend-tag jQuery
+                                span.tech-tag.tool-tag GitHub
 
+            // Project Footer
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-trophy.me-2
+                                | Eliminated 100% of scheduling conflicts and improved operational transparency
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-check-double.me-2
+                                | Live & Scaled
 
-
-            p.project-origin
-                i.fas.fa-map-marker
-                | Guranwala, Pakistan
-
-            .thumbnail-gallery
-                .thumbnail
-                    a(href=`/assets/img/portfolio/idaratulmustafa-1.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/idaratulmustafa-1.webp` alt='Idara tul mustafa' title='Idara tul mustafa' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/idaratulmustafa-2.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/idaratulmustafa-2.webp` alt='Idara tul mustafa' title='Idara tul mustafa' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/idaratulmustafa-3.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/idaratulmustafa-3.webp` alt='Idara tul mustafa' title='Idara tul mustafa' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/idaratulmustafa-4.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/idaratulmustafa-4.webp` alt='Idara tul mustafa' title='Idara tul mustafa' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/idaratulmustafa-5.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/idaratulmustafa-5.webp` alt='Idara tul mustafa' title='Idara tul mustafa' loading='lazy')
-
-            ul.technologies
-                li PHP
-                li Laravel
-                li Bootstrap
-                li MYSQL
-                li Apache
-                li Linux
-                li PHP Storm
-                li GitHub

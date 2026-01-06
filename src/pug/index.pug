@@ -5,28 +5,34 @@ html(lang='en')
 
         meta(charset="UTF-8")
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name="description" content="Full-Stack Engineer specializing in Laravel, Vue.js & custom software development. Helping businesses in the USA build scalable web apps & APIs.")
-        meta(name="keywords" content="Custom Software Development USA, Laravel Developer USA, Vue.js Developer, Full Stack Web Developer, API Integration, PHP Developer USA, MySQL Expert, Web Application Development, Remote Software Engineer")
+        
+        // Essential Meta Tags for Social Sharing & SEO
+        title Usman Saif - Logistics & Automotive Software Expert | Custom Solutions to Streamline Operations & Grow Sales
+
+        meta(name="description" content="8+ years of expertise in building high-performance Laravel & Vue.js solutions for logistics and automotive industries. I help business owners streamline operations, scale technology, and increase revenue through intelligent automation and custom software.")
+        meta(name="keywords" content="logistics software expert, automotive business solutions, custom laravel developer, vue.js enterprise systems, business process automation, fleet management software, inventory tracking, api development, usman saif portfolio")
         meta(name="author" content="Usman Saif")
         meta(name="robots" content="index, follow")
-        meta(property="og:title" content="Usman Saif - Full-Stack Engineer | Laravel & Vue.js Expert")
-        meta(property="og:description" content="Full-Stack Engineer specializing in Laravel, Vue.js & custom software development. Helping businesses in the USA build scalable web apps & APIs.")
+        link(rel="canonical" href="https://usmansaif.com")
+
+        // Open Graph Tags (Facebook, LinkedIn, etc.)
+        meta(property="og:title" content="Logistics & Automotive Software Expert | Streamline Operations & Grow Your Sales")
+        meta(property="og:description" content="Custom software solutions that help logistics and automotive business owners run smoother operations and increase revenue. 8+ years experience with Laravel & Vue.js enterprise systems.")
         meta(property="og:image" content="https://usmansaif.com/assets/img/meta-cover.jpg")
-        meta(property="og:image:alt" content="Portfolio preview of Mian Usman Saif, Full-Stack Engineer & Solution Architect")
+        meta(property="og:image:alt" content="Usman Saif - Custom Software Solutions for Logistics & Automotive Business Growth")
+        meta(property="og:image:width" content="1200")
+        meta(property="og:image:height" content="630")
         meta(property="og:url" content="https://usmansaif.com")
         meta(property="og:type" content="website")
-        meta(property="og:site_name" content="Usman Saif - Portfolio")
-        meta(name="twitter:site" content="@usmansaif22")
-        meta(name="twitter:creator" content="@usmansaif22")
-
+        meta(property="og:site_name" content="Usman Saif - Business Software Solutions")
 
         // Twitter Card Meta Tags
         meta(name="twitter:card" content="summary_large_image")
-        meta(name="twitter:title" content="Usman Saif - Full-Stack Engineer | Laravel & Vue.js Expert")
-        meta(name="twitter:description" content="Full-Stack Engineer specializing in Laravel, Vue.js & custom software development. Helping businesses in the USA build scalable web apps & APIs.")
+        meta(name="twitter:title" content="Logistics & Automotive Software Expert | Streamline Operations & Grow Sales")
+        meta(name="twitter:description" content="Custom solutions that help business owners in logistics and automotive industries optimize operations and increase revenue. Laravel & Vue.js expert with 8+ years experience.")
         meta(name="twitter:image" content="https://usmansaif.com/assets/img/meta-cover.jpg")
-
-        title Usman Saif - Full-Stack Engineer | Laravel & Vue.js Expert
+        meta(name="twitter:site" content="@usmansaif22")
+        meta(name="twitter:creator" content="@usmansaif22")
 
         link(rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96")
         link(rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg")
@@ -40,128 +46,49 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v6.3.0/js/all.js', crossorigin='anonymous', async)
 
         // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap', rel='stylesheet')
+
+        // AOS Animation Library
+        link(href='https://unpkg.com/aos@2.3.1/dist/aos.css', rel='stylesheet')
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
         script(type="application/ld+json").
-            {
-              "@context": "https://schema.org/",
-              "@type": "ProfessionalService",
-              "name": "Usman Saif",
-              "description": "Services offered by Usman Saif | Senior Software Engineer",
-              "image": "https://usmansaif.com/assets/img/meta-cover.jpg",
-              "url": "https://usmansaif.com",
-              "telephone": "+923311440036",
-              "priceRange": "$15 - $30",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Plot 114, G2, Wapda Town",
-                "addressLocality": "Lahore",
-                "postalCode": "54770",
-                "addressCountry": "PK"
-              },
-              "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "31.430385",
-                "longitude": "74.263029"
-              },
-              "openingHoursSpecification": {
-                "@type": "OpeningHoursSpecification",
-                "opens": "09:00",
-                "closes": "18:00",
-                "dayOfWeek": [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                ]
-              },
-              "makesOffer": [
+          {
+            "@context": "https://schema.org",
+            "@graph": [
               {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Custom Web Application Development",
-                  "description": "Build scalable, secure, and dynamic web applications tailored to your business needs using Laravel and Vue.js."
-                }
+                "@type": "WebSite",
+                "@id": "https://usmansaif.com/#website",
+                "url": "https://usmansaif.com",
+                "name": "Usman Saif - Software Solutions Expert",
+                "description": "Custom Laravel & Vue.js solutions for logistics and automotive businesses."
               },
               {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Backend Development",
-                  "description": "Design and implement robust backend systems with efficient APIs, database management, and performance optimization."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "API Development",
-                  "description": "Develop secure and well-documented APIs for seamless integration with frontend and third-party applications."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Database Design & Optimization",
-                  "description": "Create efficient MySQL database schemas, optimize queries, and ensure high-performance data management."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Linux Server Administration",
-                  "description": "Manage Linux-based servers for hosting, deployment, performance tuning, and security hardening."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Scripting / Automation",
-                  "description": "Automate tasks, streamline workflows, and develop custom commands in Ubuntu/Debian using powerful Bash scripts."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "WordPress Website Development",
-                  "description": "Create custom WordPress websites, including theme, plugin integration, and SEO-friendly designs."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Agile Methodology & Scrum",
-                  "description": "Experienced in Agile environments, following Scrum practices for iterative development, stand-ups, sprints, and backlog grooming."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Payment Gateway Integration",
-                  "description": "Integrating payment gateways like Stripe, PayPal, or Authorize.Net for secure online payments."
-                }
+                "@type": "ProfessionalService",
+                "name": "Usman Saif - Logistics & Automotive Software Solutions",
+                "description": "Custom software development for logistics and automotive businesses to streamline operations and grow sales",
+                "url": "https://usmansaif.com",
+                "image": "https://usmansaif.com/assets/img/profile.jpg",
+                "founder": {
+                  "@type": "Person",
+                  "name": "Usman Saif",
+                  "jobTitle": "Software Solutions Expert"
+                },
+                "areaServed": "United States",
+                "serviceType": [
+                  "Custom Software Development",
+                  "Logistics Management Systems",
+                  "Fleet Tracking Solutions",
+                  "Business Process Automation"
+                ],
+                "priceRange": "$$",
+                "slogan": "Streamline Operations, Grow Sales"
               }
-            ],
-              "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.8",
-                "ratingCount": "10",
-                "reviewCount": "10"
-              }
-            }
+            ]
+          }
+
 
     body#page-top(class="light-mode")
 
@@ -247,11 +174,28 @@ html(lang='en')
             hr.m-0
 
         // Footer - Copyright Section
-        footer.bg-dark.text-white.text-center.py-3
-            p.mb-0 &copy; #{new Date().getFullYear()} Usman Saif. All Rights Reserved.
+        footer.bg-secondary.text-white.text-center.py-5
+            .container
+                p.mb-0.opacity-75 &copy; #{new Date().getFullYear()} Usman Saif. Built for Performance & Growth.
+                .mt-3
+                    a.text-white.mx-2(href="https://linkedin.com/in/usmansaif22" target="_blank") LinkedIn
+                    | &bull;
+                    a.text-white.mx-2(href="https://github.com/usmansaif" target="_blank") GitHub
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js', async)
+
+        // AOS JS
+        script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+        script.
+            document.addEventListener('DOMContentLoaded', function() {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true,
+                    mirror: false
+                });
+            });
 
         // Core theme JS
         script(src='js/scripts.js')
@@ -260,12 +204,9 @@ html(lang='en')
         script(async src="https://www.googletagmanager.com/gtag/js?id=G-W7NYNR4C27")
         script.
             window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
+            function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-
             gtag('config', 'G-W7NYNR4C27');
 
-        // LinkedIn Badge Script (include once in layout or bottom of page)
+        // LinkedIn Badge Script
         script(src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript")

@@ -1,33 +1,46 @@
 .resume-section-content
-    h2.section-heading.mb-3 Education
-    .d-flex.flex-column.flex-md-row.justify-content-between.mb-0
-        .flex-grow-1
-            h4.mb-0 University of Sargodha
-            .subheading.mb-3 Bachelor of Computer Science
-        .flex-shrink-0
-            span.text-primary 2013 - 2017
+    h2.section-heading.mb-5 Education & Certifications
+    
+    .education-container
+        // University Education
+        .education-card(data-aos="fade-up")
+            .edu-header
+                .edu-title-group
+                    h3.institution-name University of Sargodha
+                    .degree-name Bachelor of Computer Science
+                span.edu-date 2013 - 2017
+            p.edu-description Specialized in Software Engineering and Database Systems with a focus on enterprise application architecture.
+        
+        h3.subheading.mb-4.mt-5 
+            i.fas.fa-certificate.me-2
+            | Professional Certifications
+        
+        .row
+            .col-md-6
+                .education-card(data-aos="fade-up" data-aos-delay="100")
+                    .edu-header
+                        .edu-title-group
+                            h3.institution-name Corvit Systems
+                            .degree-name Certified Ethical Hacker (CEH v9)
+                        span.edu-date March 2017
+                    .edu-content.d-flex.align-items-center.gap-3
+                        .thumbnail-gallery.m-0
+                            .thumbnail
+                                a(href=`/assets/img/certs/ceh-1.webp` target="_blank" class="lightbox")
+                                    img(src=`/assets/img/certs/thumbs/ceh-1.webp` alt='CEH v9 Certificate' title='CEH v9 Certificate' loading='lazy' class="rounded shadow-sm")
+                        p.m-0.small.text-muted Advanced training in network security and information systems auditing.
 
-    h2.mt-5.mb-3 Certifications / Trainings
-    .d-flex.flex-column.flex-md-row.justify-content-between
-        .flex-grow-1
-            h4.mb-0 Corvit Systems
-            .subheading.mb-3 Certified Ethical Hacker, Computer and Information Systems Security/Information
-        .flex-shrink-0
-            span.text-primary March 2017
-            .thumbnail-gallery
-                        .thumbnail
-                            a(href=`/assets/img/certs/ceh-1.webp` target="_blank" class="lightbox")
-                                img(src=`/assets/img/certs/thumbs/ceh-1.webp` alt='CEH v9 Certificate' title='CEH v9 Certificate' loading='lazy')
-
-
-    .d-flex.flex-column.flex-md-row.justify-content-between
-        .flex-grow-1
-            h4.mb-0 IBM Parner World (LMS)
-            .subheading.mb-3 IBM Integration Bus Developer v10
-        .flex-shrink-0
-            span.text-primary August 2017
-            .thumbnail-gallery
-                .thumbnail
-                        a(href=`/assets/img/certs/ibm-1.webp` target="_blank" class="lightbox")
-                            img(src=`/assets/img/certs/thumbs/ibm-1.webp` alt='IBM Integration Bus Developer v10' title='IBM Integration Bus Developer v10' loading='lazy')
+            .col-md-6
+                .education-card(data-aos="fade-up" data-aos-delay="200")
+                    .edu-header
+                        .edu-title-group
+                            h3.institution-name IBM Partner World
+                            .degree-name Integration Bus Developer v10
+                        span.edu-date August 2017
+                    .edu-content.d-flex.align-items-center.gap-3
+                        .thumbnail-gallery.m-0
+                            .thumbnail
+                                a(href=`/assets/img/certs/ibm-1.webp` target="_blank" class="lightbox")
+                                    img(src=`/assets/img/certs/thumbs/ibm-1.webp` alt='IBM IIB v10' title='IBM IIB v10' loading='lazy' class="rounded shadow-sm")
+                        p.m-0.small.text-muted Certified in enterprise message bus architecture and SOA integration patterns.
 

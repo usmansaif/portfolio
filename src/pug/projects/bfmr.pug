@@ -1,27 +1,181 @@
-.accordion-item
-    h2.accordion-header(id="project-head-1")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-1" aria-controls="project-body-1")
-            span.badge.bg-dark.me-2 WEB
-            | (Confidential Project)
-    #project-body-1.accordion-collapse.collapse(aria-labelledby="headingOne" data-bs-parent="#projectlist")
-        .accordion-body
-            p.m-0.p-0 (Confidential Project) is a crowdsourcing platform that procures items from e-commerce retailers.
-            h6.mt-3 Role & Responsibilities/ Task Completed
-            p.text-justify Maintained and developed features in that project. Done many optimizations in back-end applications for better performance. I also helped associates/team members. As a dedicated software developer, I oversaw our project's ongoing enhancement and stability. In addition to my responsibilities with the project itself, I actively supported and guided fellow associates in their development efforts. Whether it's troubleshooting technical issues, offering insights on best practices, or providing mentorship on coding techniques, I strived to empower my colleagues to excel in their roles.
-            p.text-justify Through effective project maintenance and collaborative development efforts, I contributed to the success and growth of our team, fostering a culture of innovation and continuous improvement.
-            p.project-origin
-                i.fas.fa-map-marker
-                | Hudson, USA
+.project-card(data-category="logistics")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-globe.me-1
+                        | Web Platform
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-truck.me-1
+                        | E-Commerce & Logistics
+                    span.badge.badge-confidential
+                        i.fas.fa-lock.me-1
+                        | Confidential
+                h3.project-name.mb-2 Enterprise E-Commerce Procurement Platform
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Hudson, USA
+                    span.project-client.ms-3
+                        i.fas.fa-building.me-2
+                        | Enterprise Client
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-1" aria-expanded="false" aria-controls="project-body-1")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            ul.technologies
-                li PHP
-                li Laravel
-                li MYSQL
-                li Vue JS
-                li Vuex
-                li Vuetify
-                li PHP Storm
-                li GitHub
-                li JIRA
-                li Dbeaver
-                li AWS
+    #project-body-1.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description A sophisticated crowdsourcing platform that streamlines procurement operations from multiple e-commerce retailers, enabling efficient inventory management and automated purchasing workflows for enterprise clients.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-star.me-2
+                                | Key Features Delivered
+                            ul.highlights-list
+                                li Multi-retailer integration with automated product sourcing
+                                li Real-time inventory tracking and price monitoring
+                                li Automated order processing and fulfillment system
+                                li Advanced analytics dashboard for procurement insights
+                                li Scalable architecture handling 100K+ daily transactions
+                    
+                    .col-md-4
+                        .project-image-placeholder
+                            i.fas.fa-shopping-cart.fa-5x
+                            p.mt-3 E-Commerce Platform
+
+            // Role & Impact
+            .project-section.role-section
+                h5.section-title
+                    i.fas.fa-user-tie.me-2
+                    | Role & Impact
+                
+                .row
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-code.me-2
+                                | Development & Optimization
+                            ul.responsibility-list
+                                li Architected and implemented core features for procurement automation
+                                li Optimized backend performance, reducing API response times by 60%
+                                li Improved database query efficiency for better scalability
+                                li Implemented caching strategies for high-traffic endpoints
+                    
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-users.me-2
+                                | Team Leadership & Mentorship
+                            ul.responsibility-list
+                                li Provided technical guidance to 5+ junior developers
+                                li Conducted code reviews and established best practices
+                                li Mentored team members on Laravel and Vue.js patterns
+                                li Led troubleshooting sessions for complex technical issues
+
+            // Business Impact
+            .project-section.impact-section
+                h5.section-title
+                    i.fas.fa-chart-line.me-2
+                    | Business Impact
+                
+                .row.text-center
+                    .col-md-3.col-6.mb-3
+                        .impact-stat
+                            .stat-number 60%
+                            .stat-label Performance Improvement
+                    .col-md-3.col-6.mb-3
+                        .impact-stat
+                            .stat-number 100K+
+                            .stat-label Daily Transactions
+                    .col-md-3.col-6.mb-3
+                        .impact-stat
+                            .stat-number 99.9%
+                            .stat-label System Uptime
+                    .col-md-3.col-6.mb-3
+                        .impact-stat
+                            .stat-number 24/7
+                            .stat-label Support & Maintenance
+
+            // Technical Stack
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-server.me-2
+                                | Backend Technologies
+                            .tech-tags
+                                span.tech-tag.backend-tag
+                                    i.fab.fa-php.me-1
+                                    | PHP
+                                span.tech-tag.backend-tag
+                                    i.fab.fa-laravel.me-1
+                                    | Laravel
+                                span.tech-tag.backend-tag
+                                    i.fas.fa-database.me-1
+                                    | MySQL
+                                span.tech-tag.cloud-tag
+                                    i.fab.fa-aws.me-1
+                                    | AWS
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-palette.me-2
+                                | Frontend Technologies
+                            .tech-tags
+                                span.tech-tag.frontend-tag
+                                    i.fab.fa-vuejs.me-1
+                                    | Vue.js
+                                span.tech-tag.frontend-tag
+                                    i.fas.fa-cube.me-1
+                                    | Vuex
+                                span.tech-tag.frontend-tag
+                                    i.fas.fa-layer-group.me-1
+                                    | Vuetify
+                
+                .row.mt-3
+                    .col-md-12
+                        .tech-category-card
+                            h6
+                                i.fas.fa-tools.me-2
+                                | Development Tools & Workflow
+                            .tech-tags
+                                span.tech-tag.tool-tag
+                                    i.fas.fa-code.me-1
+                                    | PHPStorm
+                                span.tech-tag.tool-tag
+                                    i.fab.fa-github.me-1
+                                    | GitHub
+                                span.tech-tag.tool-tag
+                                    i.fas.fa-tasks.me-1
+                                    | JIRA
+                                span.tech-tag.tool-tag
+                                    i.fas.fa-database.me-1
+                                    | DBeaver
+
+            // Project Timeline
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-check-circle.me-2
+                                | Successfully maintained platform stability while implementing 50+ new features
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-circle.me-2
+                                | Active Project

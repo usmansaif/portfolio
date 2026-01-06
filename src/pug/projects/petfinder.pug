@@ -1,52 +1,147 @@
-.accordion-item
-    h2.accordion-header(id="petfinder")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-petfinder" aria-controls="project-petfinder")
-            span.badge.bg-dark.me-2 WEB
-            | Petfinder.pk ‒ Pets Lost & Found Portal
-    #project-petfinder.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
-            a.btn.btn-link.btn-sm.float-end.mb-5(href='https://petfinder.pk' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
-                | petfinder.pk
-                i.fas.fa-external-link
+.project-card(data-category="web")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-globe.me-1
+                        | Web Application
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-paw.me-1
+                        | Pet Care & Social Impact
+                    span.badge.badge-status.bg-success
+                        i.fas.fa-check.me-1
+                        | Live Platform
+                h3.project-name.mb-2 Petfinder.pk ‒ Pets Lost & Found Portal
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Rawalpindi, Pakistan
+                    span.project-client.ms-3
+                        i.fas.fa-link.me-2
+                        a(href='https://petfinder.pk' target='_blank' class="text-white text-decoration-none") petfinder.pk
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#petfinder-body" aria-expanded="false" aria-controls="petfinder-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            p PetFinder.pk is a web application built to help reunite lost pets with their owners and support pet care. Users can report lost, found, or abandoned pets, with features like automatic poster generation, geolocation-based marking, and notification for reuniting pets. The platform also includes a directory of vets and pet stores with opening hours and services, plus a blog for pet care tips. It is fully optimized for SEO to ensure maximum reach.
+    #petfinder-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description PetFinder.pk is a dedicated web application built to help reunite lost pets with their owners and support pet care. The platform empowers users to report lost, found, or abandoned pets with specialized tools like automatic poster generation and geolocation-based marking.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-star.me-2
+                                | Key Features Delivered
+                            ul.highlights-list
+                                li Automatic lost/found poster generation for social sharing
+                                li Geolocation-based marking for precise incident reporting
+                                li Real-time notifications for potential pet matches
+                                li Comprehensive directory of vets and pet stores with service details
+                                li SEO-optimized blog for pet care tips and community engagement
+                    
+                    .col-md-4
+                        .thumbnail-gallery.d-flex.flex-wrap.gap-2
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/petfinder-1.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/petfinder-1.webp` alt='petfinder' title='petfinder' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/petfinder-2.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/petfinder-2.webp` alt='petfinder' title='petfinder' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/petfinder-3.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/petfinder-3.webp` alt='petfinder' title='petfinder' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/petfinder-4.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/petfinder-4.webp` alt='petfinder' title='petfinder' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/petfinder-5.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/petfinder-5.webp` alt='petfinder' title='petfinder' loading='lazy' class="img-fluid rounded")
 
-            strong Responsibilities:
-            ul
-                li Developed the application from scratch using
-                    strong Laravel, Blade, jQuery, and Bootstrap.
-                li Implemented features like poster generation, area-based marking, and pet-owner notifications.
-                li Created searchable directories for vets and pet stores to assist pet owners.
-                li Integrated a blog for pet-related articles.
-                li Optimized the platform for SEO and performance.
-                li Managed development, testing, and deployment phases.
+            // Role & Impact
+            .project-section.role-section
+                h5.section-title
+                    i.fas.fa-user-tie.me-2
+                    | Role & Impact
+                
+                .row
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-code.me-2
+                                | Full-Stack Development
+                            ul.responsibility-list
+                                li Built the entire platform from scratch using Laravel and MySQL
+                                li Developed custom logic for PDF poster generation and image processing
+                                li Implemented interactive maps for pet sighting locations
+                                li Managed end-to-end development cycle from concept to deployment
+                    
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-search.me-2
+                                | SEO & Performance
+                            ul.responsibility-list
+                                li Implemented advanced SEO strategies for higher search visibility
+                                li Optimized page load speeds for better mobile user experience
+                                li Integrated social media sharing hooks for viral reach
+                                li Established automated backup and maintenance routines
 
+            // Technical Stack
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-server.me-2
+                                | Backend & Database
+                            .tech-tags
+                                span.tech-tag.backend-tag
+                                    i.fab.fa-laravel.me-1
+                                    | Laravel
+                                span.tech-tag.backend-tag
+                                    i.fab.fa-php.me-1
+                                    | PHP
+                                span.tech-tag.backend-tag
+                                    i.fas.fa-database.me-1
+                                    | MySQL
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-desktop.me-2
+                                | Frontend & UI
+                            .tech-tags
+                                span.tech-tag.frontend-tag
+                                    i.fab.fa-bootstrap.me-1
+                                    | Bootstrap
+                                span.tech-tag.frontend-tag
+                                    i.fab.fa-js.me-1
+                                    | jQuery
+                                span.tech-tag.frontend-tag
+                                    i.fas.fa-paint-brush.me-1
+                                    | Blade Templates
 
-            p.project-origin
-                i.fas.fa-map-marker
-                | Rawalpindi, Pakistan
-
-            .thumbnail-gallery
-                .thumbnail
-                    a(href=`/assets/img/portfolio/petfinder-1.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/petfinder-1.webp` alt='petfinder' title='petfinder' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/petfinder-2.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/petfinder-2.webp` alt='petfinder' title='petfinder' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/petfinder-3.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/petfinder-3.webp` alt='petfinder' title='petfinder' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/petfinder-4.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/petfinder-4.webp` alt='petfinder' title='petfinder' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/petfinder-5.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/petfinder-5.webp` alt='petfinder' title='petfinder' loading='lazy')
-
-            ul.technologies
-                li PHP
-                li Laravel
-                li MYSQL
-                li PHP Storm
-                li Bootstrap
-                li Apache
+            // Project Timeline
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-award.me-2
+                                | Successfully helped numerous pet owners reunite with their lost pets
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-globe-asia.me-2
+                                | Live Community Platform

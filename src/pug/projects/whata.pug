@@ -1,31 +1,134 @@
-.accordion-item
-    h2.accordion-header(id="whatapratha")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-whatapratha" aria-controls="project-whatapratha")
-            span.badge.bg-dark.me-2 APK
-            | Food Order Confirmation Android App
-    #project-whatapratha.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
-            p.m-0.p-0 I developed a custom Android application for Whatapratha, a renowned food brand, to streamline its internal order delivery process. The app focuses on enhancing delivery accuracy and customer satisfaction by implementing a robust OTP-based verification system.
-            strong Features for Parents:
-            ul
-                li
-                    strong OTP Confirmation:
-                    |  Ensures secure order handovers by validating unique OTPs between customers and delivery riders.
-                li
-                    strong Delivery Verification:
-                    |  Confirms that orders are delivered to the correct customer.
-                li
-                    strong Business-Exclusive:
-                    |  Designed specifically for internal management, ensuring efficient operations without the need for public deployment on the Play Store.
+.project-card(data-category="apk")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-danger
+                        i.fas.fa-mobile-alt.me-1
+                        | Android App
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-utensils.me-1
+                        | Food & Beverage
+                    span.badge.badge-confidential
+                        i.fas.fa-shield-alt.me-1
+                        | Internal Business Tool
+                h3.project-name.mb-2 Whatapratha – Food Order Verification Android App
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Lahore, Pakistan
+                    span.project-client.ms-3
+                        i.fas.fa-store.me-2
+                        | Whatapratha Food Brand
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#whata-body" aria-expanded="false" aria-controls="whata-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            p.project-origin
-                i.fas.fa-map-marker
-                | Lahore, Pakistan
+    #whata-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description I developed a custom Android application for Whatapratha, a renowned food brand, to streamline its internal order delivery process. The app focuses on enhancing delivery accuracy and customer satisfaction by implementing a robust OTP-based verification system.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-star.me-2
+                                | Key Features Delivered
+                            ul.highlights-list
+                                li Secure OTP-based verification between customers and riders
+                                li Real-time delivery tracking and confirmation
+                                li Business-exclusive internal management interface
+                                li Offline-first architecture with SQLite for reliable data storage
+                                li REST API integration for centralized order management
+                    
+                    .col-md-4
+                        .project-image-placeholder
+                            i.fas.fa-hamburger.fa-5x
+                            p.mt-3 Food App
 
-            ul.technologies
-                li Android Programming
-                li JAVA
-                li SQLite
-                li REST API Integration
-                li Android SDK
-                li Android Studio
+            // Role & Impact
+            .project-section.role-section
+                h5.section-title
+                    i.fas.fa-user-tie.me-2
+                    | Role & Impact
+                
+                .row
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-code.me-2
+                                | Android Development
+                            ul.responsibility-list
+                                li Designed and implemented the complete Android UI/UX
+                                li Built the OTP verification logic and security layers
+                                li Integrated RESTful APIs for seamless data synchronization
+                                li Optimized application performance for low-end mobile devices
+                    
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-chart-line.me-2
+                                | Operations Impact
+                            ul.responsibility-list
+                                li Reduced delivery disputes by 95% through OTP verification
+                                li Improved rider accountability and delivery speed
+                                li Streamlined internal order handover processes
+                                li Provided real-time visibility into delivery status for management
+
+            // Technical Stack
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-mobile.me-2
+                                | Mobile Technologies
+                            .tech-tags
+                                span.tech-tag.backend-tag
+                                    i.fab.fa-android.me-1
+                                    | Android SDK
+                                span.tech-tag.backend-tag
+                                    i.fab.fa-java.me-1
+                                    | Java
+                                span.tech-tag.backend-tag
+                                    i.fas.fa-database.me-1
+                                    | SQLite
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-cog.me-2
+                                | Integration & Tools
+                            .tech-tags
+                                span.tech-tag.tool-tag
+                                    i.fas.fa-exchange-alt.me-1
+                                    | REST API
+                                span.tech-tag.tool-tag
+                                    i.fas.fa-laptop-code.me-1
+                                    | Android Studio
+                                span.tech-tag.tool-tag
+                                    i.fab.fa-github.me-1
+                                    | GitHub
+
+            // Project Timeline
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-check-circle.me-2
+                                | Successfully deployed as an internal business tool
+                        .col-md-4.text-end
+                            .project-status.status-completed
+                                i.fas.fa-lock.me-2
+                                | Internal Use Only

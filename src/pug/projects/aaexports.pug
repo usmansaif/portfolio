@@ -1,30 +1,93 @@
-.accordion-item
-    h2.accordion-header(id="aaexports")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-aaexports" aria-controls="project-aaexports")
-            span.badge.bg-dark.me-2 WEB
-            | AAExports ‒ Home Textile Company
-    #project-aaexports.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
-            //a.btn.btn-link.btn-sm.float-end.mb-5(href='https://aaexports.com.pk' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
-            //    | aaexports.com.pk
-            //    i.fas.fa-external-link
+.project-card(data-category="web")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-globe.me-1
+                        | Web Platform
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-home.me-1
+                        | Home Textiles
+                    span.badge.badge-confidential
+                        i.fas.fa-check-circle.me-1
+                        | Completed
+                h3.project-name.mb-2 AAExports – Home Textile Enterprise Website
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Faisalabad, Pakistan
+                    span.project-client.ms-3
+                        i.fas.fa-building.me-2
+                        | AA Exports Official
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#aaexports-body" aria-expanded="false" aria-controls="aaexports-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            p.m-0.p-0 Developed a comprehensive website for AAEXPORTS tailored to their specific requirements, ensuring a user-friendly interface and seamless functionality to enhance their online presence. Integrated email solutions with their business tools to streamline communication and improve operational efficiency. Additionally, provided in-house IT support services, assisting with technical setups and ensuring smooth business operations.
-            p.m-0.p-0 This project demonstrates my expertise in web development, IT support, and delivering customized business solutions.
+    #aaexports-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description Developed a comprehensive digital presence for AA Exports, a leading home textile company. The solution included a custom-tailored website focused on user experience and seamless operational efficiency through integrated business tools.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-lightbulb.me-2
+                                | Key Solutions Delivered
+                            ul.highlights-list
+                                li Custom responsive website architecture for textile showcase
+                                li Integrated secure email solutions for streamlined business communication
+                                li End-to-end IT infrastructure support and technical setup
+                                li Optimized operational workflows through digital automation
+                    
+                    .col-md-4
+                        .thumbnail-gallery.d-flex.flex-wrap.gap-2
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/aaexports-1.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/aaexports-1.webp` alt='AA Exports' title='AA Exports' loading='lazy' class="img-fluid rounded")
 
-            p.project-origin
-                i.fas.fa-map-marker
-                | Faisalabad, Pakistan
+            // Technical Implementation
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-code.me-2
+                                | Development
+                            .tech-tags
+                                span.tech-tag.backend-tag PHP
+                                span.tech-tag.backend-tag MySQL
+                                span.tech-tag.frontend-tag Bootstrap
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-tools.me-2
+                                | Tools & Design
+                            .tech-tags
+                                span.tech-tag.tool-tag VS Code
+                                span.tech-tag.tool-tag Adobe Photoshop
+                                span.tech-tag.tool-tag MS Outlook
 
-            .thumbnail-gallery
-                .thumbnail
-                    a(href=`/assets/img/portfolio/aaexports-1.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/aaexports-1.webp` alt='AAExports Official Website Home Page' title='AAExports Official Website Home Page' loading='lazy')
-
-            ul.technologies
-                li PHP
-                li MYSQL
-                li VScode
-                li Bootstrap
-                li Adobe Photoshop
-                li MS Outlook
+            // Project Footer
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-trophy.me-2
+                                | Successfully enhanced online visibility and communication efficiency for a major textile exporter
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-check-circle.me-2
+                                | Live & Operational

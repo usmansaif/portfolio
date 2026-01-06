@@ -1,56 +1,104 @@
-.accordion-item
-    h2.accordion-header(id="project-head-4")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-4" aria-controls="project-body-4")
-            span.badge.bg-dark.me-2 WEB
-            | Dealership Experts
-    #project-body-4.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
-            p Dealership Experts is a specialized job portal designed exclusively for connecting automotive experts with dealerships and auto-related businesses. The platform streamlines the recruitment process by providing a dedicated space for skilled auto professionals, including mechanics, technicians, sales consultants, and service advisors, to find relevant opportunities in the automotive industry.
+.project-card(data-category="web")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-globe.me-1
+                        | Job Portal
+                    span.badge.badge-industry.bg-warning.text-dark
+                        i.fas.fa-car.me-1
+                        | Automotive Industry
+                    span.badge.badge-confidential
+                        i.fas.fa-wrench.me-1
+                        | Specialized Hiring
+                h3.project-name.mb-2 Dealership Experts – Automotive Recruitment Platform
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Texas, USA
+                    span.project-client.ms-3
+                        i.fas.fa-users-cog.me-2
+                        | Automotive Dealerships
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#dealershipexpert-body" aria-expanded="false" aria-controls="dealershipexpert-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            strong Key features of the portal include:
-            ul
-                li
-                    strong Job Listings:
-                    | Comprehensive job postings from dealerships and auto companies, categorized by roles, skills, and locations.
-                li
-                    strong Resume Management:
-                    | Allows candidates to create, upload, and manage professional resumes tailored to automotive roles.
-                li
-                    strong Search and Matching:
-                    | Advanced search filters for matching candidates with the best job opportunities based on their experience and skills
-                li
-                    strong Employer Dashboard:
-                    | Enables dealerships to manage job postings, review applications, and streamline candidate hiring.
-                li
-                    strong Candidate Dashboard:
-                    | Helps job seekers track applications, save jobs, and receive notifications for matching job openings.
+    #dealershipexpert-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description A niche-focused job portal connecting automotive dealerships with specialized industry experts. Streamlines the hiring process for mechanics, consultants, and service advisors through targeted matchmaking.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-check-double.me-2
+                                | Specialized Features
+                            ul.highlights-list
+                                li Tailored Resume Management for automotive technical skills
+                                li Dedicated Employer Dashboard for high-volume hiring
+                                li Intelligent candidate matching based on industry certifications
+                                li Real-time notification system for new automotive opportunities
+                    
+                    .col-md-4
+                        .thumbnail-gallery.d-flex.flex-wrap.gap-2
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/dealershipexpert-1.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/dealershipexpert-1.webp` alt='Dealership Expert' title='Dealership Expert' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/dealershipexpert-2.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/dealershipexpert-2.webp` alt='Dealership Expert' title='Dealership Expert' loading='lazy' class="img-fluid rounded")
 
-            strong My role in this project:
-            p.p-0.m-0 I provided maintenance and feature development services, ensuring the platform operates smoothly and continues to evolve with new functionalities to meet the dynamic needs of the automotive recruitment industry. My responsibilities included:
-            ul
-                li
-                    | Bug fixing and performance optimization for seamless user experience.
-                li
-                    | Implementing new features to enhance usability for job seekers and employers.
-                li
-                    | Ensuring the platform remains secure and scalable as the user base grows.
+            // Role & Responsibilities
+            .project-section.role-section
+                h5.section-title
+                    i.fas.fa-tools.me-2
+                    | Development & Optimization
+                p Provided ongoing maintenance and feature evolution, focusing on performance tuning and implementing security enhancements for a growing user base.
 
-            p.project-origin
-                i.fas.fa-map-marker
-                | Texas, United States
+            // Technical Implementation
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-server.me-2
+                                | Backend Architecture
+                            .tech-tags
+                                span.tech-tag.backend-tag PHP
+                                span.tech-tag.backend-tag MySQL
+                                span.tech-tag.backend-tag Apache/Linux
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-code-branch.me-2
+                                | Tools & Workflow
+                            .tech-tags
+                                span.tech-tag.tool-tag VS Code
+                                span.tech-tag.tool-tag GitLab
+                                span.tech-tag.tool-tag CI/CD Pipeline
 
-            .thumbnail-gallery
-                .thumbnail
-                    a(href=`/assets/img/portfolio/dealershipexpert-1.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/dealershipexpert-1.webp` alt='Dealership Experts homepage' title='Dealership Experts homepage' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/dealershipexpert-2.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/dealershipexpert-2.webp` alt='Dealership Experts job listing page' title='Dealership Experts job listing page' loading='lazy')
+            // Project Footer
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-check-circle.me-2
+                                | Successfully optimized platform performance, reducing application processing time
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-id-card.me-2
+                                | Live in US Market
 
-            ul.technologies
-                li PHP
-                li MYSQL
-                li Apache
-                li Linux
-                li Vscode
-                li GitLab

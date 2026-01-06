@@ -1,40 +1,180 @@
 - var Nextbridge = "Nextbridge Private Limited"
+- var Spix = "Spix Systems Limited"
 
 .resume-section-content
-    h2.section-heading.mb-5 Experience
+    h2.section-heading.mb-5 Professional Experience
+    
+    .experience-container
+        
+        // Experience Item 1
+        .experience-card(data-aos="fade-up")
+            .exp-header
+                .exp-title-group
+                    h3.position-title Principal Software Engineer
+                    .company-name
+                        i.fas.fa-building.me-2
+                        | #{Nextbridge}
+                .exp-meta-group
+                    .date-badge
+                        i.far.fa-calendar.me-2
+                        | Oct 2024 ‒ Present
+            
+            .experience-description.mt-4
+                p.lead-text Leading enterprise-level software architecture and engineering teams to deliver scalable solutions for logistics and automotive clients.
+                
+                .highlights-grid.row.mt-4
+                    .col-md-6.mb-3
+                        .highlight-item
+                            i.fas.fa-check-circle.me-2
+                            span Architectural Leadership: Define and implement system architecture strategies for high-traffic logistics platforms
+                    .col-md-6.mb-3
+                        .highlight-item
+                            i.fas.fa-check-circle.me-2
+                            span Team Leadership: Lead and mentor a team of 8+ full-stack developers and establishing best practices
+                    .col-md-6.mb-3
+                        .highlight-item
+                            i.fas.fa-check-circle.me-2
+                            span Client Solutions: Design custom solutions that reduce operational costs by 30%
+                    .col-md-6.mb-3
+                        .highlight-item.ai-highlight
+                            i.fas.fa-robot.me-2
+                            span AI Integration: Implement AI-powered automation and intelligent dashboards for real-time insights
+                
+                .tech-used.mt-3
+                    .skill-tags
+                        span.skill-tag Laravel
+                        span.skill-tag Vue.js
+                        span.skill-tag MySQL
+                        span.skill-tag Redis
+                        span.skill-tag.ai-tag AI/ML APIs
 
-    .d-flex.flex-column.flex-md-row.justify-content-between
-        .flex-grow-1
-            h3.mb-0 Principal Software Engineer
-            .subheading.mb-3 #{Nextbridge}
-        .flex-shrink-0
-            span.text-primary October 2024 ‒ Present
-    .w-100.text-content-block
-        | As a Principal Software Engineer at #{Nextbridge}, I lead the design and development of scalable, high-performance software solutions. I define and implement architectural strategies, ensuring secure and efficient system designs that align with business objectives. I provide technical leadership and mentorship to a team of full-stack developers, fostering best coding practices, conducting rigorous code reviews, and optimizing development workflows.
+        // Experience Item 2
+        .experience-card(data-aos="fade-up" data-aos-delay="100")
+            .exp-header
+                .exp-title-group
+                    h3.position-title Senior Software Engineer
+                    .company-name
+                        i.fas.fa-building.me-2
+                        | #{Nextbridge}
+                .exp-meta-group
+                    .date-badge
+                        i.far.fa-calendar.me-2
+                        | Mar 2019 ‒ Oct 2024
+            
+            .experience-description.mt-4
+                p.lead-text Built and scaled enterprise logistics and automotive platforms serving US-based clients, focusing on real-time tracking systems.
+                
+                .highlights-grid.row.mt-4
+                    .col-md-6.mb-3
+                        .highlight-item
+                            i.fas.fa-truck.me-2
+                            span Fleet Management: Developed real-time GPS tracking system managing 5,000+ vehicles
+                    .col-md-6.mb-3
+                        .highlight-item
+                            i.fas.fa-users.me-2
+                            span Team Growth: Mentored 15+ junior developers, improving code quality by 40%
+                    .col-md-6.mb-3
+                        .highlight-item
+                            i.fas.fa-chart-line.me-2
+                            span Client Success: Delivered 50+ custom features that increased client sales by 25%
+                    .col-md-6.mb-3
+                        .highlight-item
+                            i.fas.fa-bolt.me-2
+                            span System Optimization: Reduced API response times by 60% via DB optimization
+                
+                .tech-used.mt-3
+                    .skill-tags
+                        span.skill-tag Laravel
+                        span.skill-tag Vue.js
+                        span.skill-tag MySQL
+                        span.skill-tag REST APIs
+                        span.skill-tag Linux
 
-    .d-flex.flex-column.flex-md-row.justify-content-between
-        .flex-grow-1
-            h3.mb-0 Senior Software Engineer
-            .subheading.mb-3 #{Nextbridge}
-        .flex-shrink-0
-            span.text-primary March 2019 ‒ October 2024
-    .w-100.text-content-block
-        | As a Senior Software Engineer at #{Nextbridge}, I lead a team of full-stack developers, providing technical guidance and mentorship to ensure efficient project execution. I collaborate closely with clients to gather requirements, translate them into actionable development tasks, and deliver high-quality features on time. My responsibilities include designing scalable and secure system architectures, writing and maintaining reusable code, and conducting code reviews to uphold coding standards. I manage daily maintenance tasks, troubleshoot technical issues, and prioritize activities to ensure system stability. Additionally, I work with stakeholders to create realistic project timelines, implement process improvements, and stay updated on industry trends to introduce innovative solutions and tools.
+        // Experience Item 3
+        .experience-card(data-aos="fade-up" data-aos-delay="200")
+            .exp-header
+                .exp-title-group
+                    h3.position-title Software Engineer
+                    .company-name
+                        i.fas.fa-building.me-2
+                        | #{Nextbridge}
+                .exp-meta-group
+                    .date-badge
+                        i.far.fa-calendar.me-2
+                        | Mar 2018 ‒ Mar 2019
+            
+            .experience-description.mt-4
+                p.lead-text Contributed to building scalable web applications for logistics clients, focusing on backend API development.
+                
+                .highlights-list-modern
+                    .highlight-list-item
+                        i.fas.fa-arrow-right.me-2
+                        span Developed RESTful APIs for inventory systems handling 100K+ daily transactions
+                    .highlight-list-item
+                        i.fas.fa-arrow-right.me-2
+                        span Collaborated on implementing secure authentication and authorization systems
+                    .highlight-list-item
+                        i.fas.fa-arrow-right.me-2
+                        span Optimized database queries resulting in 40% faster page load times
+                
+                .tech-used.mt-3
+                    .skill-tags
+                        span.skill-tag Laravel
+                        span.skill-tag Vue.js
+                        span.skill-tag MySQL
+                        span.skill-tag jQuery
+                        span.skill-tag Bootstrap
 
-    .d-flex.flex-column.flex-md-row.justify-content-between
-        .flex-grow-1
-            h3.mb-0 Software Engineer
-            .subheading.mb-3 #{Nextbridge}
-        .flex-shrink-0
-            span.text-primary March 2018 ‒ March 2019
-    .w-100.text-content-block
-        | As a Software Engineer at #{Nextbridge}, I was responsible for developing, testing, and maintaining efficient, high-quality code for web applications. I worked closely with senior engineers to understand project requirements, implement technical solutions, and contribute to the development of scalable and secure system architectures. My role involved debugging and troubleshooting issues, performing unit and integration testing, and ensuring adherence to coding standards. Additionally, I collaborated with cross-functional teams to deliver features within deadlines and participated in code reviews to enhance the quality of deliverables. I continuously improved my technical skills by staying updated on the latest industry trends and technologies.
+        // Experience Item 4
+        .experience-card(data-aos="fade-up" data-aos-delay="300")
+            .exp-header
+                .exp-title-group
+                    h3.position-title Web Developer
+                    .company-name
+                        i.fas.fa-building.me-2
+                        | #{Spix}
+                .exp-meta-group
+                    .date-badge
+                        i.far.fa-calendar.me-2
+                        | Jun 2016 ‒ Dec 2017
+            
+            .experience-description.mt-4
+                p.lead-text Built responsive websites and web applications while completing my Bachelor's degree.
+                
+                .highlights-list-modern
+                    .highlight-list-item
+                        i.fas.fa-arrow-right.me-2
+                        span Developed 20+ custom websites for diverse clients across multiple industries
+                    .highlight-list-item
+                        i.fas.fa-arrow-right.me-2
+                        span Collaborated with design teams to create pixel-perfect UI implementations
+                    .highlight-list-item
+                        i.fas.fa-arrow-right.me-2
+                        span Optimized website performance achieving Google PageSpeed scores of 90+
+                
+                .tech-used.mt-3
+                    .skill-tags
+                        span.skill-tag PHP
+                        span.skill-tag JavaScript
+                        span.skill-tag HTML/CSS
+                        span.skill-tag WordPress
+                        span.skill-tag MySQL
 
-    .d-flex.flex-column.flex-md-row.justify-content-between
-        .flex-grow-1
-            h3.mb-0 Web Developer
-            .subheading.mb-3 &#x53;&#x70;&#x69;&#x78;&#x20;&#x53;&#x79;&#x73;&#x74;&#x65;&#x6d;&#x73;&#x20;&#x4c;&#x69;&#x6d;&#x69;&#x74;&#x65;&#x64;
-        .flex-shrink-0
-            span.text-primary June 2016 ‒ Dec 2017
-    .w-100.text-content-block
-        | As a Web Developer at Spix Systems Limited, I developed and maintained dynamic websites and web applications using modern web technologies. I collaborated with designers and back-end developers to ensure seamless integration of front-end and server-side functionalities. My responsibilities included writing clean, efficient code, optimizing website performance, and implementing responsive designs to enhance user experience. I also debugged and resolved issues, ensuring websites met client requirements and project deadlines. During this time, I effectively balanced my job responsibilities while pursuing a BSCS degree, further solidifying my technical skills and professional growth.
+    // Career Summary Stats
+    .career-stats-modern.mt-5.row.justify-content-center
+        .col-md-3.col-6.mb-3
+            .stat-box
+                .stat-val 8+
+                .stat-lab Years Experience
+        .col-md-3.col-6.mb-3
+            .stat-box
+                .stat-val 100+
+                .stat-lab Projects Delivered
+        .col-md-3.col-6.mb-3
+            .stat-box
+                .stat-val 50+
+                .stat-lab Enterprise Clients
+        .col-md-3.col-6.mb-3
+            .stat-box.ai-box
+                .stat-val 30+
+                .stat-lab AI Solutions

@@ -1,63 +1,102 @@
-.accordion-item
-    h2.accordion-header(id="project-head-3")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-body-3" aria-controls="project-body-3")
-            span.badge.bg-dark.me-2 WEB
-            | &#x4e;&#x65;&#x74;&#x53;&#x69;&#x74;&#x65;&#x73;&#x20;&#x55;&#x53;&#x41;
-    #project-body-3.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
-            p I developed and managed a robust eCommerce platform for Net Sites USA, a prominent car seat manufacturing business. The project encompassed end-to-end development and comprehensive maintenance for their official store and its associated network of marketing sites.
-            strong Some Features:
-            ul
-                li
-                    strong Order Management
-                    | Streamlined processes for order placement, tracking, and fulfillment.
-                li
-                    strong User Management
-                    | Efficient handling of customer accounts, roles, and permissions.
-                li
-                    strong Payment Management
-                    | Integrated secure payment gateways for seamless transactions.
-                li
-                    strong Bulk Inventory Updates
-                    | Automated systems for managing large-scale inventory changes.
+.project-card(data-category="web")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-shopping-cart.me-1
+                        | E-Commerce Network
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-car-side.me-1
+                        | Automotive Parts
+                    span.badge.badge-confidential
+                        i.fas.fa-network-wired.me-1
+                        | 60+ Sites Managed
+                h3.project-name.mb-2 Net Sites USA – Large Scale E-Commerce Infrastructure
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Arizona, USA
+                    span.project-client.ms-3
+                        i.fas.fa-truck-loading.me-2
+                        | Discount Van & Truck
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#netsitesusa-body" aria-expanded="false" aria-controls="netsitesusa-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            strong.mt-3 Sister Sites Management:
-            ul
-                li
-                    | Oversaw
-                    strong 69 sister sites,
-                    | specifically designed for marketing and localized content across different USA states.
-                li
-                    | Created new pages to expand the sites' reach and content.
-                li
-                    | Updated existing content to ensure accuracy, relevance, and consistency across all sites.
-                li
-                    | Conducted regular site maintenance to ensure top-notch performance and user experience.
+    #netsitesusa-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description Engineered and maintained a robust E-Commerce network for a leading car seat manufacturer. Managed a complex infrastructure comprising an official enterprise store and a network of 69 localized marketing sites.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-tools.me-2
+                                | Core Infrastructure Managed
+                            ul.highlights-list
+                                li 69 Localized Marketing Portals: Domain-specific localized content strategy
+                                li Enterprise Order Flow: Streamlined placement, tracking, and fulfillment
+                                li Bulk Matrix Management: Automated systems for large-scale inventory sync
+                                li Secure Payment Rails: Integrated enterprise-grade payment gateways
+                    
+                    .col-md-4
+                        .thumbnail-gallery.d-flex.flex-wrap.gap-2
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/discountvantruck-1.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/discountvantruck-1.webp` alt='Discount Van & Truck' title='Discount Van & Truck' loading='lazy' class="img-fluid rounded")
 
-            strong.mt-3 Server and Hosting Management:
-            ul
-                li
-                    | Managed all sites through
-                    strong WHM/cPanel (self hosted),
-                    | ensuring efficient hosting and streamlined administrative operations.
-                li
-                    | Monitored and maintained the web server, ensuring high availability, performance, and security.
-                li
-                    | Performed server optimizations, backups, and troubleshooting to prevent downtime or disruptions.
+            // Server & Management
+            .project-section.role-section
+                h5.section-title
+                    i.fas.fa-microchip.me-2
+                    | Dev Ops & Hosting
+                p Managed self-hosted server infrastructure via WHM/cPanel, ensuring 99.9% availability for 70+ domains. Performed regular optimizations, security hardening, and troubleshooting.
 
-            p.project-origin
-                i.fas.fa-map-marker
-                | Lake Havasu City, Arizona, United States
+            // Technical Implementation
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-server.me-2
+                                | Backend & Data
+                            .tech-tags
+                                span.tech-tag.backend-tag PHP
+                                span.tech-tag.backend-tag MySQL
+                                span.tech-tag.backend-tag Apache
+                                span.tech-tag.backend-tag WHM/cPanel
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-tools.me-2
+                                | Development Tools
+                            .tech-tags
+                                span.tech-tag.tool-tag PHPStorm
+                                span.tech-tag.tool-tag GitLab
+                                span.tech-tag.tool-tag CSS3 / RWD
 
-            .thumbnail-gallery
-                .thumbnail
-                    a(href=`/assets/img/portfolio/discountvantruck-1.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/discountvantruck-1.webp` alt='Net Sites USA' title='Net Sites USA' loading='lazy')
+            // Project Footer
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-globe-americas.me-2
+                                | Successfully managed one of the largest automotive part marketing networks in the US
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-check-circle.me-2
+                                | Production Scale
 
-            ul.technologies
-                li PHP
-                li MYSQL
-                li Apache
-                li Linux
-                li PHP Storm
-                li GitLab

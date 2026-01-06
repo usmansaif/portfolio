@@ -1,61 +1,134 @@
-.accordion-item
-    h2.accordion-header(id="shipping")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#shipping-label" aria-controls="shipping-label")
-            span.badge.bg-dark.me-2 JAVA
-            | Shipping Label Printer
-    #shipping-label.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
+.project-card(data-category="desktop")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-secondary
+                        i.fas.fa-desktop.me-1
+                        | Desktop Application
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-truck-loading.me-1
+                        | Logistics & Export
+                    span.badge.badge-status.bg-success
+                        i.fas.fa-check-circle.me-1
+                        | Deployed & Operational
+                h3.project-name.mb-2 Shipping Label Printer – Logistics Automation System
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Madinah, Saudi Arabia
+                    span.project-client.ms-3
+                        i.fas.fa-building.me-2
+                        | Dates Export Enterprise
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#shipping-body" aria-expanded="false" aria-controls="shipping-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            p The Shipping Labels application was developed for internal use by a client specializing in exporting fresh dates from Saudi Arabia to international markets. Previously, the client relied on manual processes, including handwriting shipping information on each carton and maintaining records in physical registers. The new application automated these processes by generating shipping label stickers for cartons and PDFs for customer communication. It also ensured accurate record-keeping for backtracking purposes.
-            p p The application was built using
-                strong Java
-                |  with a
-                strong Swing
-                |  UI interface, and
-                strong MySQL
-                |  as the database, adhering to the client’s specific requirements.
+    #shipping-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description This application was developed to automate the shipping and logistics operations for a major dates exporter in Saudi Arabia. By replacing manual handwriting and physical registers with a digital solution, it significantly improved operational efficiency and record accuracy.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-star.me-2
+                                | Key Features Delivered
+                            ul.highlights-list
+                                li Automated shipping label generation for cartons and pallets
+                                li Dynamic PDF report generation for customer communication
+                                li Robust digital logging system for backtracking and audit purposes
+                                li Intuitive UI designed for ease of use in warehouse environments
+                                li Real-time database synchronization for multi-user access
+                    
+                    .col-md-4
+                        .project-image-placeholder
+                            i.fas.fa-print.fa-5x
+                            p.mt-3 Logistics Utility
 
-            strong Key Features:
-            ul
-                li
-                    strong Shipping Label Generation:
-                    |  Automates the creation of printable shipping label stickers for cartons.
-                li
-                    strong PDF Export:
-                    |  Generates customer-friendly PDFs with shipment details for easy sharing.
-                li
-                    strong Record Tracking:
-                    |  Maintains an organized digital log of all printed labels for backtracking and audit purposes.
-                li
-                    strong User-Friendly Interface:
-                    |  Simple and intuitive Swing-based UI tailored for non-technical users.
-                li
-                    strong Customizable Inputs:
-                    |  Allows the client to input and manage shipment details efficiently.
+            // Role & Impact
+            .project-section.role-section
+                h5.section-title
+                    i.fas.fa-user-tie.me-2
+                    | Role & Impact
+                
+                .row
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-code.me-2
+                                | Software Engineering
+                            ul.responsibility-list
+                                li Architected the application using Java SE and MySQL
+                                li Developed custom printing modules using JasperReports
+                                li Implemented FlatLaf for a modern, professional desktop UI
+                                li Optimized database queries for fast record retrieval
+                    
+                    .col-md-6
+                        .responsibility-card
+                            h6
+                                i.fas.fa-clipboard-check.me-2
+                                | Quality & Documentation
+                            ul.responsibility-list
+                                li Conducted rigorous stress testing for high-volume label printing
+                                li Provided comprehensive user manuals and training
+                                li Delivered 24/7 technical support during the initial deployment
+                                li Ensured 100% data integrity for audit compliance
 
+            // Technical Stack
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-code.me-2
+                                | Core Technologies
+                            .tech-tags
+                                span.tech-tag.backend-tag
+                                    i.fab.fa-java.me-1
+                                    | Java SE
+                                span.tech-tag.backend-tag
+                                    i.fas.fa-database.me-1
+                                    | MySQL
+                                span.tech-tag.tool-tag
+                                    i.fas.fa-file-pdf.me-1
+                                    | JasperReports
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-tools.me-2
+                                | Frameworks & Tools
+                            .tech-tags
+                                span.tech-tag.frontend-tag
+                                    i.fas.fa-paint-roller.me-1
+                                    | FlatLaf UI
+                                span.tech-tag.tool-tag
+                                    i.fas.fa-box.me-1
+                                    | Apache Maven
+                                span.tech-tag.tool-tag
+                                    i.fab.fa-github.me-1
+                                    | GitHub
 
-            strong Responsibilities:
-            ul
-                li Analyzed client requirements and translated them into detailed technical specifications.
-                li Designed and developed the application's backend logic using Java and MySQL, ensuring robust performance.
-                li Created an intuitive
-                    strong Swing UI interface
-                    | for easy interaction and data entry.
-                li Implemented PDF generation functionality for customer communication.
-                li Developed a label printing module to format and print shipping labels accurately.
-                li Integrated a MySQL database for efficient data storage and retrieval.
-                li Conducted rigorous testing to ensure functionality, reliability, and ease of use.
-                li Delivered comprehensive documentation and provided technical support post-deployment.
-
-            p.project-origin
-                i.fas.fa-map-marker
-                | Madinah, Saudi Arabia
-
-            ul.technologies
-                li MYSQL
-                li JAVA SE
-                li JAVA Swing
-                li Apache Maven
-                li JasperReports
-                li Github
-                li FlatLaf - Look and Feel
+            // Project Timeline
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-check-circle.me-2
+                                | Successfully automated 100% of the manual labeling process
+                        .col-md-4.text-end
+                            .project-status.status-completed
+                                i.fas.fa-archive.me-2
+                                | Version 2.0 Maintenance

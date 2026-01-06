@@ -2,15 +2,15 @@
 // Colors
 // 
 
-// Pre-state grayscale colors used in other variables
-
-$gray-800: #333333;
-
-// Override Bootstrap color system
-
-$orange: #00A8A8;
+// Modern Color Palette
+$primary: #4F46E5; // Indigo
+$secondary: #0F172A; // Slate
+$accent: #00D2FF; // Neon Blue
+$black: #1E293B; // Dark Slate
+$white: #FFFFFF;
+$gray-100: #F1F5F9;
+$gray-200: #E2E8F0;
+$gray-800: #1E293B;
 
 // Override Bootstrap default state colors
-
-$primary: #003c76;
-$black: #495057;
+$orange: $accent;

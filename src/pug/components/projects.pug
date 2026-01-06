@@ -1,32 +1,54 @@
 .resume-section-content
-    h2.section-heading.mb-5 Projects
-    .accordion.accordion-flush(id="projectlist")
-        // BFMR
+    h2.section-heading.mb-5
+        i.fas.fa-project-diagram.me-3
+        | Featured Projects
+    
+    p.section-intro.mb-5
+        | Explore my portfolio of enterprise-grade solutions built for logistics, automotive, and healthcare industries. Each project showcases scalable architecture, AI-powered features, and measurable business impact.
+
+    //- Projects Grid/Accordion
+
+    // Projects Grid/Accordion
+    .projects-container
         include ../projects/bfmr
-        // Falvey SDK
         include ../projects/falvey-sdk
-        // Net Sites USA
         include ../projects/netsitesusa
-        // Dealership Experts
         include ../projects/dealershipexpert
-        // Cosmo camp
         include ../projects/cosmocamp
-        // Shipping label printer
         include ../projects/shippinglabel
-        // Idara tul mustafa
         include ../projects/idara
-        // Agent Pet
         include ../projects/agentpet
-        // Medlucy
         include ../projects/medlucy
-        // Medlucy
         include ../projects/aaexports
-        // Petfinder
         include ../projects/petfinder
-        // PakPoultry
         include ../projects/pakpoultry
-        // Whata Pratha Rider
         include ../projects/whata
-        // C Shine Pest Control
         include ../projects/cshine
 
+    // Stats Section
+    .projects-stats.mt-5
+        .row.text-center
+            .col-md-3.col-6.mb-3
+                .stat-card
+                    .stat-icon
+                        i.fas.fa-trophy
+                    .stat-number 100+
+                    .stat-label Successful Projects
+            .col-md-3.col-6.mb-3
+                .stat-card
+                    .stat-icon
+                        i.fas.fa-users
+                    .stat-number 50+
+                    .stat-label Happy Clients
+            .col-md-3.col-6.mb-3
+                .stat-card
+                    .stat-icon
+                        i.fas.fa-clock
+                    .stat-number 8+
+                    .stat-label Years Experience
+            .col-md-3.col-6.mb-3
+                .stat-card.ai-stat
+                    .stat-icon
+                        i.fas.fa-robot
+                    .stat-number 30+
+                    .stat-label AI-Powered Solutions

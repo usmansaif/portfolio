@@ -5,24 +5,49 @@
 #sideNav {
     padding-left: 1rem;
     padding-right: 1rem;
+    background-color: $secondary !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    .navbar-brand {
+        .img-profile {
+            max-width: 3rem;
+            max-height: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+    }
 
     .navbar-nav .nav-item .nav-link {
-        font-weight: 800;
-        letter-spacing: 0.05rem;
-        text-transform: uppercase;
+        font-family: $headings-font-family;
+        font-weight: 600;
+        font-size: 0.9rem;
+        letter-spacing: 0.02rem;
+        padding: 0.75rem 1rem;
+        transition: all 0.3s ease;
+        border-radius: 8px;
+        margin: 0.25rem 0;
+
+        &.active,
+        &:hover {
+            color: $white !important;
+            background: rgba(255, 255, 255, 0.1);
+        }
     }
 
     .navbar-toggler {
+        padding: 0.5rem;
+        border-color: rgba(255, 255, 255, 0.1);
+
         &:focus {
-            outline-color: lighten($primary, 15%);
+            box-shadow: none;
+            outline: none;
         }
     }
 }
 
 @include media-breakpoint-up(lg) {
     #sideNav {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
         text-align: center;
         position: fixed;
         top: 0;
@@ -33,38 +58,44 @@
 
         width: $sidebar-base-width;
         height: 100vh;
+        z-index: 1030;
 
         .navbar-brand {
             display: flex;
-
-            margin: auto auto 0;
-            padding: 0.5rem;
+            margin: 2rem auto 2rem;
+            padding: 0;
 
             .img-profile {
                 max-width: 10rem;
                 max-height: 10rem;
-                border: 0.5rem solid fade-out($white, 0.8);
+                border: 0.35rem solid rgba(255, 255, 255, 0.1);
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.02);
+                }
             }
         }
 
         .navbar-collapse {
             display: flex;
-            align-items: flex-start;
-            flex-grow: 0;
+            align-items: center;
+            flex-grow: 1;
 
             width: 100%;
             margin-bottom: auto;
 
             .navbar-nav {
                 flex-direction: column;
-
                 width: 100%;
 
                 .nav-item {
                     display: block;
+                    width: 100%;
 
                     .nav-link {
                         display: block;
+                        text-align: center;
                     }
                 }
             }

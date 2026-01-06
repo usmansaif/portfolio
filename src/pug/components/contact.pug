@@ -1,57 +1,68 @@
 .container
-    h2.section-heading.mb-5 Contact
-    .row
-        // First Column - Contact Details
-        .col-md-12
-            h1.m-0.p-0.text-capitalize Lets Chat.
-            h2.m-0.p-0.text-capitalize Discuss about your project
-            h3.m-0.p-0.text-capitalize.text-primary Let's create something together
+    h2.section-heading.mb-5 Let's Build Your Success!
+    .row.justify-content-center
+        .col-lg-10
+            .row
+                // Contact Info
+                .col-md-6.mb-4(data-aos="fade-right")
+                    .contact-card.h-100
+                        h3.mb-4 Ready to scale?
+                        p I help business owners solve complex technical challenges and turn ideas into high-revenue software products.
+                        
+                        .mt-4.d-flex.align-items-start
+                            .bg-primary.text-white.p-3.rounded-circle.me-3
+                                i.fas.fa-envelope
+                            div
+                                strong.d-block Email
+                                img.dark-mode-bg(src="/assets/img/personal-email-address.png" alt="Email" title="Email")
+                        
+                        .mt-4.d-flex.align-items-start
+                            .bg-primary.text-white.p-3.rounded-circle.me-3
+                                i.fas.fa-phone
+                            div
+                                strong.d-block Phone
+                                img.dark-mode-bg(src="/assets/img/personal-mobile-no.png" alt="Mobile" onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Call Now")
+                        
+                        .mt-4.d-flex.align-items-start
+                            .bg-primary.text-white.p-3.rounded-circle.me-3
+                                i.fas.fa-location-dot
+                            div
+                                strong.d-block Office
+                                span Plot 114, G2, Wapda Town, Lahore, PK
 
-        // Contact Details
-        .col-md-6.mt-4
-            .contact-card
-                .mt-2
-                    strong Mail Me at
-                    br
-                    img.dark-mode-bg(src="/assets/img/personal-email-address.png" alt="Email" title="Email")
-                .mt-2
-                    strong Call Me at
-                    br
-                    img.dark-mode-bg(src="/assets/img/personal-mobile-no.png" alt="Mobile" onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Call Now")
-                .mt-2.font-weight-bold
-                    i.fas.fa-map-marker
-                    | Plot 114, G2, Wapda Town, Lahore, Pakistan. 54770
+                // CTAs
+                .col-md-6.mb-4(data-aos="fade-left")
+                    .contact-card.h-100.text-center
+                        h3.mb-4 Secure Your Slot
+                        p Currently accepting new projects for Q1 2026. Let's discuss your vision.
+                        
+                        .d-grid.gap-3.mt-4
+                            a.btn.btn-whatsapp.btn-lg(href="https://wa.me/923311440036" target="_blank" rel="noopener")
+                                i.fab.fa-whatsapp.me-2
+                                | Chat on WhatsApp
+                            
+                            button.btn.btn-outline-primary.btn-lg(onclick="window.location.href='tel:+923311440036'")
+                                i.fas.fa-phone.me-2
+                                | Book a Call
+                            
+                            a.btn.btn-secondary.btn-lg(href='/assets/file/usmansaif.vcf')
+                                i.fas.fa-address-card.me-2
+                                | Save Contact vCard
 
-        // Save Contact + LinkedIn
-        .col-md-6.mt-4
-            .contact-card
-                .mt-2
-                    p Save my contact details for quick access.
-                    ol
-                        li Download the vCard file
-                        li Add it to your contacts
-                    a.mt-2.btn.btn-primary(href='/assets/file/usmansaif.vcf')
-                        | Save My Contact
-                    button.mt-2.btn.btn-success(onclick="window.location.href='tel:+923311440036'" data-bs-toggle="tooltip" title="Make direct call")
-                        i.fas.fa-phone
-                        | Call Now
-                    a.mt-2.btn.btn-success(
-                      href="https://wa.me/923311440036"
-                      target="_blank"
-                      rel="noopener"
-                      data-bs-toggle="tooltip"
-                      title="Chat on WhatsApp"
-                    )
-                        i.fab.fa-whatsapp
-                        | WhatsApp Me
-        .col-md-6
-            .mt-3
-                // LinkedIn Badge Embed
-                .badge-base.LI-profile-badge(
-                    data-locale="en_US"
-                    data-size="large"
-                    data-theme="light"
-                    data-type="HORIZONTAL"
-                    data-vanity="usmansaif22"
-                    data-version="v1"
-                )
+                // LinkedIn
+                .col-12.mt-4(data-aos="zoom-in")
+                    .contact-card.bg-light.border-0
+                        .row.align-items-center
+                            .col-md-8
+                                h4.mb-2 Let's Connect on LinkedIn
+                                p See my latest projects, endorsements, and professional updates.
+                            .col-md-4.text-center
+                                .badge-base.LI-profile-badge(
+                                    data-locale="en_US"
+                                    data-size="large"
+                                    data-theme="light"
+                                    data-type="HORIZONTAL"
+                                    data-vanity="usmansaif22"
+                                    data-version="v1"
+                                )
+

@@ -1,43 +1,95 @@
-.accordion-item
-    h2.accordion-header(id="pakpoultry")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-pakpoultry" aria-controls="project-pakpoultry")
-            span.badge.bg-dark.me-2 WEB
-            | PakPoultry.pk ‒ Daily Poultry Updates
-    #project-pakpoultry.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
-            //a.btn.btn-link.btn-sm.float-end.mb-5(href='https://pakpoultry.pk' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
-            //    | pakpoultry.pk
-            //    i.fas.fa-external-link
+.project-card(data-category="web")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-globe.me-1
+                        | Subscription SaaS
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-egg.me-1
+                        | Poultry & Agriculture
+                    span.badge.badge-confidential
+                        i.fas.fa-robot.me-1
+                        | Automated Updates
+                h3.project-name.mb-2 PakPoultry.pk – Automated Market Insights Platform
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Multan, Pakistan
+                    span.project-client.ms-3
+                        i.fas.fa-building.me-2
+                        | Poultry Industry Members
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#pakpoultry-body" aria-expanded="false" aria-controls="pakpoultry-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            p PakPoultry.pk is a fully automated poultry management system designed and developed from scratch using Laravel, PHP, Blade, jQuery, and Bootstrap. The platform offers a subscription-based service where users can receive daily SMS alerts tailored to their selected area and alert type, such as day-old chick rates, daily egg rates, daily chicken rates, and farm rates.
-            p The system is built to collect data automatically by scraping and parsing information from multiple sources. It categorizes the data and sends personalized SMS alerts to subscribers based on their preferences. Additionally, it dynamically generates detailed price lists and posts them as rate updates on the Facebook page.
+    #pakpoultry-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description A fully automated poultry management system and subscription service. It scrapes data from multiple sources to provide real-time market insights via SMS alerts and social media updates.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-bolt.me-2
+                                | Automated Ecosystem
+                            ul.highlights-list
+                                li Intelligent Data Scraping: Real-time chicken, egg, and farm rate collection
+                                li Smart SMS Alerts: Subscription-based geo-targeted daily market updates
+                                li Facebook Integration: Autonomous price list generation and social posting
+                                li Dynamic Rate Lists: Categorized regional price index with historical tracking
+                    
+                    .col-md-4
+                        .project-image-placeholder
+                            i.fas.fa-crow.fa-5x
+                            p.mt-3 Poultry Market SaaS
 
-            strong Key Features:
-            ul
-                li
-                    strong Automated SMS Alerts:
-                    |  Sends customized daily updates to subscribers based on selected areas and alert types.
-                li
-                    strong Data Scraping & Categorization:
-                    |  Automatically scrapes data from various sources, parses it, and organizes it by type and region.
-                li
-                    strong Dynamic Rate Lists:
-                    |  Creates dynamic price lists for different poultry categories, shared automatically on the platform and Facebook.
-                li
-                    strong Admin Panel:
-                    |  Includes a robust admin interface for managing subscribers, data, and services. The admin can update SMS and email servers through an intuitive UI.
-                li
-                    strong End-to-End Management:
-                    |  Developed and managed all front-end and back-end aspects of the application independently.
+            // Technical Architecture
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-server.me-2
+                                | Backend Architecture
+                            .tech-tags
+                                span.tech-tag.backend-tag Laravel
+                                span.tech-tag.backend-tag PHP
+                                span.tech-tag.backend-tag MySQL
+                                span.tech-tag.backend-tag SMS API
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-tools.me-2
+                                | Frontend & Automation
+                            .tech-tags
+                                span.tech-tag.frontend-tag Bootstrap
+                                span.tech-tag.frontend-tag jQuery
+                                span.tech-tag.tool-tag PHPStorm
+                                span.tech-tag.tool-tag Python (Scrapers)
 
-            p.project-origin
-                i.fas.fa-map-marker
-                | Multan, Pakistan
+            // Project Footer
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-check-double.me-2
+                                | Serving thousands of daily subscribers with critical market data
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-signal.me-2
+                                | Live & Scaling
 
-            ul.technologies
-                li PHP
-                li Laravel
-                li MYSQL
-                li PHP Storm
-                li Bootstrap
-                li SMS API Integration

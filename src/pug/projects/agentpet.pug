@@ -1,46 +1,104 @@
-.accordion-item
-    h2.accordion-header(id="agent")
-        button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#project-agentpet" aria-controls="project-agentpet")
-            span.badge.bg-dark.me-2 WEB
-            | AgentPet.com
-    #project-agentpet.accordion-collapse.collapse(data-bs-parent="#projectlist")
-        .accordion-body
-            //a.btn.btn-link.btn-sm.float-end.mb-5(href='https://agentpet.com' data-bs-toggle="tooltip" target='_blank' title='Open link in new tab')
-            //    | agentpet.com
-            //    i.fas.fa-external-link
+.project-card(data-category="web")
+    .project-header
+        .d-flex.justify-content-between.align-items-start.flex-wrap
+            .project-title-section
+                .project-badges.mb-2
+                    span.badge.badge-category.bg-primary
+                        i.fas.fa-globe.me-1
+                        | Web Platform
+                    span.badge.badge-industry.bg-info
+                        i.fas.fa-dog.me-1
+                        | Pet Care & E-Commerce
+                    span.badge.badge-confidential
+                        i.fas.fa-lock.me-1
+                        | Confidential
+                h3.project-name.mb-2 AgentPet – Marketplace & E-Commerce Platform
+                .project-meta
+                    span.project-location
+                        i.fas.fa-map-marker-alt.me-2
+                        | Lahore, Pakistan
+                    span.project-client.ms-3
+                        i.fas.fa-users.me-2
+                        | Pet Owners & Breeders
+            .project-expand
+                button.btn.btn-expand(type="button" data-bs-toggle="collapse" data-bs-target="#agentpet-body" aria-expanded="false" aria-controls="agentpet-body")
+                    span.expand-text View Details
+                    i.fas.fa-chevron-down.ms-2
 
-            p.m-0.p-0 Online platform to buy and sell pets along with eCommerce capabilities to sell pet accessories and food. An easy tool to find nearby pet stores. Pet Owners also have the option to avail of some pet relocation services.
-            strong Features
-            ul
-                li Pet Accessories
-                li Pet Food Store
-                li Pet sale and purchase ads
-                li Pet relocation
-                li Find Nearby Pet Shops
-                li Forum
+    #agentpet-body.collapse
+        .project-body
+            // Project Overview
+            .project-section.overview-section
+                .row
+                    .col-md-8
+                        h5.section-title
+                            i.fas.fa-info-circle.me-2
+                            | Project Overview
+                        p.project-description A dual-purpose online platform facilitating the buying/selling of pets and a complete E-Commerce suite for pet accessories and food. Includes advanced location-based services for finding nearby pet stores and professional relocation assistance.
+                        
+                        .project-highlights.mt-4
+                            h6.highlights-title
+                                i.fas.fa-star.me-2
+                                | Key Features Delivered
+                            ul.highlights-list
+                                li Comprehensive E-Commerce store for pet accessories and nutrition
+                                li Geo-targeted marketplace for pet adoption and sales
+                                li Nearby pet shop discovery tool with interactive maps
+                                li Specialized pet relocation service management
+                                li Community-driven forum for pet care discussions
+                    
+                    .col-md-4
+                        .thumbnail-gallery.d-flex.flex-wrap.gap-2
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/agentpet-1.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/agentpet-1.webp` alt='AgentPet' title='AgentPet' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/agentpet-2.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/agentpet-2.webp` alt='AgentPet' title='AgentPet' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/agentpet-3.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/agentpet-3.webp` alt='AgentPet' title='AgentPet' loading='lazy' class="img-fluid rounded")
+                            .thumbnail
+                                a(href=`/assets/img/portfolio/agentpet-4.webp` rel='noreferrer' target="_blank" class="lightbox")
+                                    img(src=`/assets/img/portfolio/thumb/agentpet-4.webp` alt='AgentPet' title='AgentPet' loading='lazy' class="img-fluid rounded")
 
-            p.project-origin
-                i.fas.fa-map-marker
-                | Lahore, Pakistan
+            // Technical Implementation
+            .project-section.tech-section
+                h5.section-title
+                    i.fas.fa-layer-group.me-2
+                    | Technology Stack
+                
+                .row
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-server.me-2
+                                | Backend & Database
+                            .tech-tags
+                                span.tech-tag.backend-tag Laravel
+                                span.tech-tag.backend-tag PHP
+                                span.tech-tag.backend-tag MySQL
+                    
+                    .col-md-6
+                        .tech-category-card
+                            h6
+                                i.fas.fa-palette.me-2
+                                | Frontend & Tools
+                            .tech-tags
+                                span.tech-tag.frontend-tag jQuery
+                                span.tech-tag.frontend-tag Bootstrap
+                                span.tech-tag.tool-tag GitHub
 
-            .thumbnail-gallery
-                .thumbnail
-                    a(href=`/assets/img/portfolio/agentpet-1.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/agentpet-1.webp` alt='AgentpPet homepage' title='AgentpPet homepage' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/agentpet-2.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/agentpet-2.webp` alt='AgentpPet pet listing' title='AgentpPet pet listing' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/agentpet-3.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/agentpet-3.webp` alt='AgentpPet category homepage' title='AgentpPet category homepage' loading='lazy')
-                .thumbnail
-                    a(href=`/assets/img/portfolio/agentpet-4.webp` rel='noreferrer' target="_blank" class="lightbox")
-                        img(src=`/assets/img/portfolio/thumb/agentpet-4.webp` alt='AgentpPet pet and store listing' title='AgentpPet pet and store listing' loading='lazy')
+            // Project Footer
+            .project-section.timeline-section
+                .project-footer
+                    .row.align-items-center
+                        .col-md-8
+                            .achievement-badge
+                                i.fas.fa-check-circle.me-2
+                                | Successfully launched a scalable marketplace connecting thousands of pet owners
+                        .col-md-4.text-end
+                            .project-status.status-active
+                                i.fas.fa-circle.me-2
+                                | Active Platform
 
-            ul.technologies
-                li Laravel
-                li PHP
-                li MYSQL
-                li JQuery
-                li Bootstrap
-                li Github
