@@ -2,7 +2,9 @@
 // Global
 // 
 
+html,
 body {
+    overflow-x: hidden;
     padding-top: $navbar-base-height;
     color: $black;
     font-family: $font-family-base;
