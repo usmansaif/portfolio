@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Usman Saif - Senior Software Engineer Resume</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                background: #f5f5f5;
+                font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+                color: #1a1a1a;
+                font-size: 11pt;
+                line-height: 1.5;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .resume-container {
+                max-width: 8.5in;
+                background: white;
+                margin: 0.5in auto;
+                padding: 0.6in 0.65in;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Header */
+            .resume-header {
+                text-align: center;
+                margin-bottom: 0.25in;
+                padding-bottom: 0.15in;
+                border-bottom: 2px solid #2563eb;
+            }
+
+            .name {
+                font-size: 28pt;
+                font-weight: 700;
+                color: #1a1a1a;
+                margin-bottom: 0.08in;
+                letter-spacing: -0.5px;
+            }
+
+            .title {
+                font-size: 13pt;
+                color: #2563eb;
+                font-weight: 600;
+                margin-bottom: 0.1in;
+            }
+
+            .contact-bar {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0.15in;
+                font-size: 9.5pt;
+                color: #4b5563;
+            }
+
+            .contact-item {
+                display: flex;
+                align-items: center;
+                gap: 0.04in;
+            }
+
+            .contact-item::before {
+                content: '•';
+                margin-right: 0.04in;
+            }
+
+            .contact-item:first-child::before {
+                content: '';
+                margin: 0;
+            }
+
+            /* Sections */
+            .section {
+                margin-bottom: 0.22in;
+            }
+
+            .section-title {
+                font-size: 12pt;
+                font-weight: 700;
+                color: #1a1a1a;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 0.12in;
+                padding-bottom: 0.05in;
+                border-bottom: 1.5px solid #e5e7eb;
+            }
+
+            /* Summary */
+            .summary-text {
+                font-size: 10.5pt;
+                line-height: 1.6;
+                color: #374151;
+                text-align: justify;
+            }
+
+            /* Core Competencies */
+            .competencies-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.08in 0.15in;
+                font-size: 10pt;
+            }
+
+            .competency-item {
+                display: flex;
+                align-items: center;
+                gap: 0.06in;
+            }
+
+            .competency-item::before {
+                content: '▪';
+                color: #2563eb;
+                font-weight: bold;
+            }
+
+            /* Experience */
+            .experience-item {
+                margin-bottom: 0.22in;
+            }
+
+            .experience-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .experience-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 0.04in;
+            }
+
+            .job-title {
+                font-size: 11pt;
+                font-weight: 700;
+                color: #1a1a1a;
+            }
+
+            .job-date {
+                font-size: 9.5pt;
+                color: #6b7280;
+                font-weight: 500;
+            }
+
+            .company-location {
+                font-size: 10pt;
+                color: #4b5563;
+                font-style: italic;
+                margin-bottom: 0.08in;
+            }
+
+            .achievements {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .achievements li {
+                position: relative;
+                padding-left: 0.18in;
+                margin-bottom: 0.06in;
+                font-size: 10pt;
+                line-height: 1.5;
+                color: #374151;
+            }
+
+            .achievements li::before {
+                content: '→';
+                position: absolute;
+                left: 0;
+                color: #2563eb;
+                font-weight: bold;
+            }
+
+            /* Skills */
+            .skills-grid {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 0.08in 0.15in;
+                font-size: 10pt;
+            }
+
+            .skill-category {
+                font-weight: 600;
+                color: #1a1a1a;
+            }
+
+            .skill-items {
+                color: #374151;
+            }
+
+            /* Education */
+            .education-item {
+                margin-bottom: 0.12in;
+            }
+
+            .education-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .degree-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+
+            .degree {
+                font-size: 10.5pt;
+                font-weight: 600;
+                color: #1a1a1a;
+            }
+
+            .edu-date {
+                font-size: 9.5pt;
+                color: #6b7280;
+            }
+
+            .institution {
+                font-size: 10pt;
+                color: #4b5563;
+                font-style: italic;
+            }
+
+            /* Projects */
+            .project-item {
+                margin-bottom: 0.1in;
+            }
+
+            .project-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .project-name {
+                font-weight: 600;
+                color: #1a1a1a;
+                font-size: 10pt;
+            }
+
+            .project-desc {
+                font-size: 9.5pt;
+                color: #4b5563;
+                margin-left: 0.15in;
+            }
+
+            /* Print Styles */
+            @media print {
+                body {
+                    background: white;
+                }
+
+                .resume-container {
+                    margin: 0;
+                    padding: 0.5in 0.6in;
+                    box-shadow: none;
+                    max-width: 100%;
+                }
+
+                .section {
+                    page-break-inside: avoid;
+                }
+
+                .experience-item {
+                    page-break-inside: avoid;
+                }
+            }
+
+            @page {
+                size: letter;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="resume-container">
+            <div class="resume-header">
+                <div class="name">USMAN SAIF</div>
+                <div class="title">Principal Software Engineer | Full-Stack Architect</div>
+                <div class="contact-bar">
+                    <div class="contact-item">usman@usmansaif.com</div>
+                    <div class="contact-item">+92-331-1440036</div>
+                    <div class="contact-item">Lahore, Pakistan</div>
+                    <div class="contact-item">linkedin.com/in/usmansaif22</div>
+                    <div class="contact-item">github.com/usmansaif</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Professional Summary</div>
+                <div class="summary-text">Results-driven Principal Software Engineer with 8+ years of expertise architecting and delivering enterprise-grade solutions for logistics and automotive industries. Proven track record of leading cross-functional teams, optimizing system performance by up to 60%, and implementing AI-powered automation that reduces operational costs by 30%. Specialized in Laravel, Vue.js, and scalable cloud architectures serving 100K+ daily transactions. Strong collaborator with US-based clients, offering 4+ hours EST/CST overlap and expertise in remote agile workflows.</div>
+            </div>
+            <div class="section">
+                <div class="section-title">Core Competencies</div>
+                <div class="competencies-grid">
+                    <div class="competency-item">Enterprise Architecture</div>
+                    <div class="competency-item">Full-Stack Development</div>
+                    <div class="competency-item">Team Leadership & Mentoring</div>
+                    <div class="competency-item">API Design & Integration</div>
+                    <div class="competency-item">Database Optimization</div>
+                    <div class="competency-item">Agile/Scrum Methodologies</div>
+                    <div class="competency-item">CI/CD & DevOps</div>
+                    <div class="competency-item">Performance Tuning</div>
+                    <div class="competency-item">AI/LLM Implementation</div>
+                    <div class="competency-item">Cloud Infrastructure (AWS)</div>
+                    <div class="competency-item">RESTful Services</div>
+                    <div class="competency-item">Technical Documentation</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Professional Experience</div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Principal Software Engineer</div>
+                        <div class="job-date">Oct 2024 – Present</div>
+                    </div>
+                    <div class="company-location">Nextbridge Private Limited | Lahore, Pakistan (US Clients)</div>
+                    <ul class="achievements">
+                        <li>Spearhead enterprise architecture and engineering strategy for Tier-1 logistics and automotive clients across North America</li>
+                        <li>Lead technical mentorship for 8+ full-stack engineers, establishing best practices and modern CI/CD pipelines</li>
+                        <li>Design and implement scalable, high-concurrency platforms supporting rapid fleet expansion for 5,000+ vehicle operations</li>
+                        <li>Deliver custom automation modules leveraging Agentic AI and LLMs, cutting operational costs by 30%</li>
+                        <li>Architect predictive analytics dashboards driving data-led decision-making for C-suite stakeholders</li>
+                        <li>Maintain 99.9% system uptime while managing 100K+ daily transactions across distributed systems</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Senior Software Engineer</div>
+                        <div class="job-date">Mar 2019 – Oct 2024</div>
+                    </div>
+                    <div class="company-location">Nextbridge Private Limited | Lahore, Pakistan (US Clients)</div>
+                    <ul class="achievements">
+                        <li>Built and scaled enterprise logistics platforms for US-based clients, focusing on real-time GPS tracking for 5,000+ vehicles</li>
+                        <li>Optimized backend performance, reducing API response times by 60% through database query optimization and caching strategies</li>
+                        <li>Delivered 50+ custom features that directly increased client sales revenue by 25% year-over-year</li>
+                        <li>Mentored 15+ junior developers, improving overall code quality by 40% through rigorous code reviews and training sessions</li>
+                        <li>Collaborated with cross-functional teams using Jira, Slack, and GitHub in fully remote agile environment</li>
+                        <li>Implemented automated testing frameworks (PHPUnit) reducing production bugs by 35%</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Software Engineer</div>
+                        <div class="job-date">Mar 2018 – Mar 2019</div>
+                    </div>
+                    <div class="company-location">Nextbridge Private Limited | Lahore, Pakistan</div>
+                    <ul class="achievements">
+                        <li>Developed RESTful APIs for inventory management systems handling 100K+ daily transactions</li>
+                        <li>Implemented secure authentication and authorization systems using Laravel Passport and JWT</li>
+                        <li>Optimized database queries and indexing strategies, achieving 40% faster page load times</li>
+                        <li>Collaborated with frontend teams to deliver seamless Vue.js integrations with backend services</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="job-title">Web Developer</div>
+                        <div class="job-date">Jun 2016 – Dec 2017</div>
+                    </div>
+                    <div class="company-location">Spix Systems Limited | Lahore, Pakistan</div>
+                    <ul class="achievements">
+                        <li>Developed 20+ responsive websites and web applications for diverse clients across multiple industries</li>
+                        <li>Achieved Google PageSpeed scores of 90+ through performance optimization and lazy loading techniques</li>
+                        <li>Collaborated with design teams to create pixel-perfect UI implementations using Bootstrap and jQuery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Technical Skills</div>
+                <div class="skills-grid">
+                    <div class="skill-category">Backend:</div>
+                    <div class="skill-items">PHP 8.x, Laravel 11, RESTful APIs, MySQL, Redis, Queue Management, PHPUnit, Microservices</div>
+                    <div class="skill-category">Frontend:</div>
+                    <div class="skill-items">Vue.js 3, Vuex, Vuetify, JavaScript (ES6+), TypeScript, HTML5/CSS3, Tailwind CSS, Bootstrap</div>
+                    <div class="skill-category">AI & Automation:</div>
+                    <div class="skill-items">OpenAI API, Anthropic Claude, Agentic AI, LangChain, Process Automation, Python (Basic)</div>
+                    <div class="skill-category">DevOps & Tools:</div>
+                    <div class="skill-items">Git/GitHub/GitLab, Docker, CI/CD Pipelines, Jira, WHM/cPanel, Postman, Linux/Apache</div>
+                    <div class="skill-category">Cloud & Databases:</div>
+                    <div class="skill-items">AWS (EC2, S3, RDS), MySQL Optimization, Database Design, Redis Caching</div>
+                    <div class="skill-category">Other:</div>
+                    <div class="skill-items">Java SE, JasperReports, WordPress, Agile/Scrum, TDD, API Documentation</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Education & Certifications</div>
+                <div class="education-item">
+                    <div class="degree-header">
+                        <div class="degree">Bachelor of Computer Science</div>
+                        <div class="edu-date">2013 – 2017</div>
+                    </div>
+                    <div class="institution">University of Sargodha | Sargodha, Pakistan</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree-header">
+                        <div class="degree">Certified Ethical Hacker (CEH v9)</div>
+                        <div class="edu-date">March 2017</div>
+                    </div>
+                    <div class="institution">Corvit Systems | Advanced training in network security and information systems auditing</div>
+                </div>
+                <div class="education-item">
+                    <div class="degree-header">
+                        <div class="degree">IBM Integration Bus Developer v10</div>
+                        <div class="edu-date">August 2017</div>
+                    </div>
+                    <div class="institution">IBM Partner World | Certified in enterprise message bus architecture and SOA integration</div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section-title">Selected Projects & Achievements</div>
+                <div class="project-item">
+                    <div class="project-name">Enterprise E-Commerce Procurement Platform (Confidential Client, Hudson, USA)</div>
+                    <div class="project-desc">Multi-retailer integration platform with automated order processing, real-time inventory tracking, and analytics dashboard. Optimized performance by 60%, handling 100K+ daily transactions with 99.9% uptime.</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-name">Dealership Experts – Automotive Recruitment Platform (Texas, USA)</div>
+                    <div class="project-desc">Niche job portal connecting automotive dealerships with specialized industry experts. Implemented intelligent candidate matching and real-time notification systems.</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-name">Shipping Label Automation System (Madinah, Saudi Arabia)</div>
+                    <div class="project-desc">Desktop application (Java SE, MySQL, JasperReports) automating shipping operations for major dates exporter. Eliminated 100% of manual labeling processes, ensuring audit compliance.</div>
+                </div>
+                <div class="project-item">
+                    <div class="project-name">Idara Tul Mustafa – Event Management Platform (Gujranwala, Pakistan)</div>
+                    <div class="project-desc">Laravel-based scheduling system with automated conflict resolution, eliminating 100% of booking overlaps and improving operational transparency for religious scholars network.</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
