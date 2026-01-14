@@ -4,8 +4,6 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://usmansaif.com/</loc>
@@ -13,8 +11,13 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://usmansaif.com/assets/file/Usman-Saif-Resume.pdf</loc>
-  <lastmod>2025-09-25T18:47:39+00:00</lastmod>
+  <loc>https://usmansaif.com/resume.html</loc>
+  <lastmod>2026-01-15T18:47:39+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://usmansaif.com/assets/file/Usman%20Saif%20-%20Principle%20Software%20Engineer%20Resume.pdf</loc>
+  <lastmod>2026-01-15T18:47:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
